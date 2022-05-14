@@ -23,17 +23,7 @@ a {
   box-sizing: border-box;
 }
 
-/*@keyframes slideDown {*/
-/*  0% {*/
-/*    height: 0;*/
-/*    opacity: 0;*/
-/*  }*/
-/*  100% {*/
-/*    opacity: 1;*/
-/*    height: 100%;*/
-/*  }*/
-/*}*/
-@keyframes slideDown {
+@keyframes marginDown {
   0% {
     margin-top: -25%;
     opacity: 0;
@@ -43,11 +33,45 @@ a {
     margin-top: 0
   }
 }
-@keyframes slideUp {
+@keyframes marginUp {
   0% {
     opacity: 1;
   }
   100% {
     opacity: 0;
+  }
+}
+
+@keyframes rotate {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(180deg);
+  }
+}
+@keyframes rotateOpposite {
+  0%{
+    transform: rotate(180deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes slideInDown {
+  0%{
+    max-height: 0;
+  }
+  100%{
+    max-height: var(--maxHeight);
+  }
+}
+@keyframes slideOutUp {
+  0%{
+    max-height: var(--maxHeight);
+  }
+  100%{
+    max-height: 0;
   }
 }
