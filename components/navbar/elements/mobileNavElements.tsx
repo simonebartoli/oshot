@@ -1,17 +1,20 @@
 import React from 'react';
 import {NextPage} from "next";
 import {AiOutlineCaretDown} from "react-icons/ai";
+import Link from "next/link";
 
 type Props = {
     element: string,
+    links: string | string[]
     sub?: string[],
 
     toggle?: any,
     setToggle?: any,
+    setNavToggle: any
     index?: number
 }
 
-const MobileNavElements: NextPage<Props> = ({element, sub, toggle, setToggle, index}) => {
+const MobileNavElements: NextPage<Props> = ({element, links, sub, toggle, setToggle, setNavToggle, index}) => {
     const switchToggle = () => {
         const rem = 16 //rem in px
         const heightAnimation = sub?.length! * (2*rem + 1.5*rem) // line height + padding
@@ -28,11 +31,18 @@ const MobileNavElements: NextPage<Props> = ({element, sub, toggle, setToggle, in
         }
     }
 
+    const switchNavToggle = () => {
+        setNavToggle(false)
+    }
+
     return (
         <>
             {sub === undefined ?
-                <div className="py-4 w-full text-center hover:bg-gray-300 hover:text-green-600 hover:font-semibold transition duration-300">
-                    <span className="uppercase cursor-pointer">{element}</span>
+                <div className="w-full text-center hover:bg-gray-300 hover:text-green-600 hover:font-semibold transition duration-300">
+                    <Link href={links as string}>
+                        <a className="inline-block py-4 w-full uppercase cursor-pointer"
+                           onClick={switchNavToggle}>{element}</a>
+                    </Link>
                 </div>
 
                 :
@@ -41,10 +51,13 @@ const MobileNavElements: NextPage<Props> = ({element, sub, toggle, setToggle, in
                         <div className="py-4"><span className="uppercase">{element}</span></div>
                         <AiOutlineCaretDown className={`${toggle[index!] === true ? "animate-rotate": toggle[index!] === false && "animate-rotateOpposite"}`}/>
                     </div>
-                    <div className={`${toggle[index!] === true ? "animate-slideInDown" : toggle[index!] === false ? "animate-slideOutUp": "hidden"} overflow-hidden flex-col bg-gray-200`}>
+                    <div id={`${element}-nav`} className={`${toggle[index!] === true ? "animate-slideInDown" : toggle[index!] === false ? "animate-slideOutUp": "hidden"} overflow-hidden flex-col bg-gray-200`}>
                         {sub.map((subElement, indexJ) =>
-                            <div key={indexJ} className="py-4 hover:bg-gray-300 hover:text-green-600 hover:font-semibold transition duration-300">
-                                <span className="uppercase cursor-pointer">{subElement}</span>
+                            <div key={indexJ} className="hover:bg-gray-300 hover:text-green-600 hover:font-semibold transition duration-300">
+                                <Link href={links[indexJ]}>
+                                    <a className="inline-block w-full py-4 uppercase cursor-pointer"
+                                       onClick={switchNavToggle}>{subElement}</a>
+                                </Link>
                             </div>
                         )}
                     </div>

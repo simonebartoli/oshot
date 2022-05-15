@@ -1,13 +1,13 @@
-import React, {Ref, useEffect, useRef, useState} from 'react';
-import {NextComponentType} from "next";
+import React, {useEffect, useState} from 'react';
+import {NextPage} from "next";
 import DesktopNav from "./desktopNav";
 import MobileNav from "./mobileNav";
+import Link from "next/link";
 
-const Navbar: NextComponentType = () => {
+const Navbar: NextPage<{heightRef: any}> = ({heightRef}) => {
     const [height, setHeight] = useState(0)
     const [screenWidth, setScreenWidth]: any = useState(null)
 
-    const heightRef: Ref<any> = useRef(null)
     useEffect(() => {
         setHeight(heightRef.current?.clientHeight)
         setScreenWidth(screen.width)
@@ -19,15 +19,23 @@ const Navbar: NextComponentType = () => {
         ["sexual dysfunction", "incontinence", "lichen-sclerosus"],
         undefined, undefined, undefined, undefined, undefined, undefined
     ]
+    const links: (string[] | string)[] = [
+        ["/about", "/testimonials"],
+        ["sexual dysfunction", "incontinence", "lichen-sclerosus"],
+        "undefined", "undefined", "undefined", "undefined", "undefined", "undefined"
+    ]
+
 
     return (
-        <nav ref={heightRef} className="fixed top-0 left-0 flex flex-row justify-between items-center bg-white drop-shadow-xl w-full px-6 xls:py-0 py-6 relative">
-            <h1 className="uppercase">This is the logo</h1>
+        <nav ref={heightRef} className="sticky z-50 top-0 left-0 flex flex-row justify-between items-center bg-white drop-shadow-xl w-full px-6 xls:py-0 py-6">
+            <Link href={"/"}>
+                <a className="uppercase">This is the logo</a>
+            </Link>
             {screenWidth !== null &&
                 (screenWidth>1152 ?
-                    <DesktopNav elements={elements} subElements={subElements}/>
+                    <DesktopNav elements={elements} subElements={subElements} links={links}/>
                     :
-                    <MobileNav height={height} elements={elements} subElements={subElements}/>
+                    <MobileNav height={height} elements={elements} subElements={subElements} links={links}/>
                 )
             }
         </nav>

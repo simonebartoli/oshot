@@ -7,9 +7,10 @@ type Props = {
     height: number
     elements: string[]
     subElements: (string[] | undefined)[]
+    links: (string[] | string)[]
 }
 // RSC
-const MobileNav: NextPage<Props> = ({height, elements, subElements}) => {
+const MobileNav: NextPage<Props> = ({height, elements, subElements, links}) => {
     const [toggle, setToggle]: any = useState(null)
     const [entitiesToggle, setEntitiesToggle] = useState([null, null])
     let entitiesIndex = -1
@@ -41,7 +42,9 @@ const MobileNav: NextPage<Props> = ({height, elements, subElements}) => {
                             key={index} element={element} sub={subElements[index]}
                             toggle={subElements[index] !== undefined ? entitiesToggle : undefined}
                             setToggle={subElements[index] !== undefined ? setEntitiesToggle : undefined}
+                            setNavToggle={setToggle}
                             index={subElements[index] !== undefined ? entitiesIndex : undefined}
+                            links={links[index]}
                         />
                     )
                 })}
