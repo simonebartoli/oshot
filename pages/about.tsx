@@ -2,10 +2,27 @@ import React from 'react';
 import styles from '../styles/about.module.css'
 import Image from "next/image";
 import photo from "../media/photos/about-me.jpg"
+import Head from "next/head";
 
 const About = () => {
     return (
         <main id={"main"} className="flex flex-col items-center justify-center gap-14 p-8 pb-16">
+            <Head>
+                <title>About Dr. Sherif Wakil - Oshot UK</title>
+                <meta name="description" content="Who is Dr. Sherif Wakil? Dr Sherif Wakil is the founder and medical director of DrSW Clinics and Royale Skin with more than two decades of experience "/>
+                <meta name="keywords" content="Sherif, Wakil, dr, doctor, oshot, pshot, o-shot, p-shot, Vampire, Face, Lift, Royale, Academy, Aesthetic, Medicine, Charles, Runles, American, Cosmetic, Association"/>
+                <meta name="robots" content="index, follow"/>
+                <meta httpEquiv="Content-Type" content="text/html; charset=utf-8"/>
+                <meta name="language" content="English"/>
+                <meta name="author" content="Sherif Wakil"/>
+
+                <meta property="og:title" content="About Dr. Sherif Wakil"/>
+                <meta property="og:site_name" content="Oshot UK - Improve Vaginal Stimulation"/>
+                <meta property="og:url" content="oshot.uk"/>
+                <meta property="og:description" content="Who is Dr. Sherif Wakil? Dr Sherif Wakil is the founder and medical director of DrSW Clinics and Royale Skin with more than two decades of experience."/>
+                <meta property="og:type" content="books.author"/>
+                <meta property="og:image" content="https://oshot.uk/wp-content/uploads/2015/02/compli-drswclinics-about.jpg"/>
+            </Head>
             <h1 className="text-4xl">Dr. Sherif Wakil, MBBCh BA FICS</h1>
             <article className="flex sm:flex-row flex-col sm:gap-8 gap-12">
                 <figure className="flex justify-center items-center basis-1/3">

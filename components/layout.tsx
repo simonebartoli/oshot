@@ -16,7 +16,6 @@ const Layout: NextPage<Props> = ({children}) => {
         console.log(document.documentElement.clientHeight)
         setTimeout(() => {
             const toRemove = navHeightRef.current!.clientHeight + footerHeightRef.current!.clientHeight
-            console.log(toRemove)
             document.getElementById("main")!.style.minHeight = `${total - toRemove}px`
         }, 10)
     })

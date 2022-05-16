@@ -11,7 +11,7 @@ const Custom404 = () => {
                 does not exist.
             </span>
             <Link href="/">
-                <a className="xls:w-1/4 p-4 border-2 border-black rounded-lg w-1/2 hover:bg-stone-300 drop-shadow-xl transition duration-200">Home</a>
+                <a className="xls:w-1/4 p-4 border-2 border-black rounded-lg w-1/2 hover:bg-stone-300 shadow-lg transition duration-200">Home</a>
             </Link>
         </main>
     );

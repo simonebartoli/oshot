@@ -29,7 +29,7 @@ const Navbar: NextPage<{heightRef: any}> = ({heightRef}) => {
     return (
         <nav ref={heightRef} className="sticky z-50 top-0 left-0 flex flex-row justify-between items-center bg-white drop-shadow-xl w-full px-6 xls:py-0 py-6">
             <Link href={"/"}>
-                <a className="uppercase">This is the logo</a>
+                <a className="uppercase">Oshot uk</a>
             </Link>
             {screenWidth !== null &&
                 (screenWidth>1152 ?

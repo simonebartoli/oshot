@@ -11,7 +11,7 @@ const Footer: NextPage<{heightRef: any}> = ({heightRef}) => {
                     <span className="text-2xl uppercase">oshot uk</span>
                     <div className="flex flex-col gap-4">
                         <div>
-                            <span>More Info on: drswclinics.com</span>
+                            <span>More Info on: <a rel={"noreferrer"} target="_blank" className="hover:text-green-500 transition duration-200" href="https://drswclinics.com">drswclinics.com</a></span>
                             <span> | </span>
                             <span className="hover:text-green-500 transition duration-200">Privacy</span>
                         </div>
@@ -24,7 +24,7 @@ const Footer: NextPage<{heightRef: any}> = ({heightRef}) => {
                         <div className="flex flex-col gap-4">
                             <div className="flex flex-row gap-4 w-fit items-center cursor-pointer hover:text-green-500 transition duration-200">
                                 <MdOutlineAlternateEmail/>
-                                <span>email@domain.com</span>
+                                <a href={"mailto: email@domain.com"}>email@domain.com</a>
                             </div>
                             <div className="flex flex-row gap-4 w-fit items-center cursor-pointer hover:text-green-500 transition duration-200">
                                 <BsGeoAltFill/>
@@ -32,7 +32,7 @@ const Footer: NextPage<{heightRef: any}> = ({heightRef}) => {
                             </div>
                             <div className="flex flex-row gap-4 w-fit items-center cursor-pointer hover:text-green-500 transition duration-200">
                                 <BsTelephoneInbound/>
-                                <span>020 3006 8459</span>
+                                <a href={"tel: 020 3006 8459"}>020 3006 8459</a>
                             </div>
                         </div>
                         <div className="text-center basis-3/5">
