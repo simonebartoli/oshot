@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react';
+import React, {RefObject, useEffect, useRef} from 'react';
 import Navbar from "./navbar/navbar";
 import Footer from "./footer/footer";
 import {NextPage} from "next";
@@ -8,8 +8,8 @@ type Props = {
 }
 
 const Layout: NextPage<Props> = ({children}) => {
-    const navHeightRef: any = useRef(null)
-    const footerHeightRef: any = useRef(null)
+    const navHeightRef: RefObject<HTMLInputElement> = useRef(null)
+    const footerHeightRef: RefObject<HTMLInputElement> = useRef(null)
 
     useEffect(() => {
         const total = window.innerHeight
