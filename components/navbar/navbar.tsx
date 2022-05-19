@@ -21,13 +21,13 @@ const Navbar: NextPage<{heightRef: any}> = ({heightRef}) => {
     ]
     const links: (string[] | string)[] = [
         ["/about", "/testimonials"],
-        ["sexual dysfunction", "incontinence", "lichen-sclerosus"],
-        "undefined", "undefined", "faqs", "undefined", "undefined", "undefined"
+        ["/sexual dysfunction", "/incontinence", "lichen-sclerosus"],
+        "undefined", "/videos", "/faqs", "/press/", "undefined", "undefined"
     ]
 
 
     return (
-        <nav ref={heightRef} className="sticky z-50 top-0 left-0 flex flex-row justify-between items-center bg-white drop-shadow-xl w-full px-6 xls:py-0 py-6">
+        <nav ref={heightRef} className="sticky z-40 top-0 left-0 flex flex-row justify-between items-center bg-white drop-shadow-xl w-full px-6 xls:py-0 py-6">
             <Link href={"/"}>
                 <a className="uppercase">Oshot uk</a>
             </Link>

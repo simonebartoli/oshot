@@ -1,0 +1,31 @@
+.article > span {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    position: unset !important;
+}
+.article {
+    position: relative;
+    width: 30%;
+}
+.image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+}
+
+@media (max-width: 1024px){
+    .article{
+        width: 75%;
+    }
+}
+@media (max-width: 768px){
+    .article{
+        width: 30%;
+    }
+}
+@media (max-width: 400px){
+    .article{
+        width: 50%;
+    }
+}

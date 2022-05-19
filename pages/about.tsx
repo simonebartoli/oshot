@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../styles/about.module.css'
 import Image from "next/image";
-import photo from "../media/photos/about-me.jpg"
+import photo from "../public/media/photos/about-me.jpg"
 import Head from "next/head";
 
 const About = () => {
@@ -18,7 +18,7 @@ const About = () => {
 
                 <meta property="og:title" content="About Dr. Sherif Wakil"/>
                 <meta property="og:site_name" content="Oshot UK - Improve Vaginal Stimulation"/>
-                <meta property="og:url" content="oshot.uk"/>
+                <meta property="og:url" content="oshot.uk/about"/>
                 <meta property="og:description" content="Who is Dr. Sherif Wakil? Dr Sherif Wakil is the founder and medical director of DrSW Clinics and Royale Skin with more than two decades of experience."/>
                 <meta property="og:type" content="books.author"/>
                 <meta property="og:image" content="https://oshot.uk/wp-content/uploads/2015/02/compli-drswclinics-about.jpg"/>

@@ -1,9 +1,17 @@
 import React from 'react';
-import {articlesLeft, articlesRight} from "../data/testimonials";
 import Article from "../components/testimonials/article";
 import Head from "next/head";
+import {TestimonialsType} from "../data/types";
+import getTestimonials from "./api/testimonials";
+import {NextPage} from "next";
 
-const Testimonials = () => {
+type Props = {
+    testimonials: TestimonialsType
+}
+
+// ARTICLES LEFT & ARTICLES RIGHT
+
+const Testimonials: NextPage<Props> = ({testimonials}) => {
     return (
         <main id={"main"} className="flex flex-col justify-start items-center p-8 pb-16 gap-8">
             <Head>
@@ -17,7 +25,7 @@ const Testimonials = () => {
 
                 <meta property="og:title" content="Testimonials and Experiences - Oshot UK"/>
                 <meta property="og:site_name" content="Oshot UK"/>
-                <meta property="og:url" content="oshot.uk"/>
+                <meta property="og:url" content="oshot.uk/testimonials"/>
                 <meta property="og:description" content="Here you can find all the experiences and story of our past patients. They all were very impressed on how this treatment change their lives."/>
                 <meta property="og:type" content="website"/>
                 <meta property="og:image" content=""/>
@@ -27,12 +35,12 @@ const Testimonials = () => {
             <p>In this page you will see the feelings of people that have tried our treatment.</p>
             <section className="flex flex-row flex-wrap gap-8 sm:p-4">
                 <div className="flex grow flex-col lg:basis-1/3 h-fit gap-8">
-                    {articlesLeft.map((element, index) =>
+                    {testimonials.articlesLeft.map((element, index) =>
                         <Article key={index} author={element.author} title={element.title} message={element.message}/>
                     )}
                 </div>
                 <div className="flex grow flex-col lg:basis-1/3 h-fit gap-8">
-                    {articlesRight.map((element, index) =>
+                    {testimonials.articlesRight.map((element, index) =>
                         <Article key={index} author={element.author} title={element.title} message={element.message}/>
                     )}
                 </div>
@@ -40,5 +48,14 @@ const Testimonials = () => {
         </main>
     );
 };
+
+export const getStaticProps = () => {
+    const testimonials: TestimonialsType = getTestimonials()
+    return {
+        props: {
+            testimonials
+        }, revalidate: 600
+    }
+}
 
 export default Testimonials;

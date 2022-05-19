@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "title": "This is a title",
+        "brief": "A game-changing new treatment is giving women back control of their bodies as well as their sexual desire.",
+        "date": "October, 2022",
+        "author": "Name Surname",
+        "path": "/media/photos/tatler-cover.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Manoto1 TV featuring O-Shot",
+        "brief": "Performed at the internationally renowned SWClinic in Harley Street London",
+        "date": "May, 2015",
+        "author": "Name Surname",
+        "path": "/media/photos/tatler-cover.jpg"
+    }
+]

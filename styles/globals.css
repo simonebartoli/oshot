@@ -86,4 +86,15 @@ a {
     opacity: 1;
   }
 }
+@keyframes arrowMove {
+  0% {
+    transform: translateX(-25%);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+  100%{
+    transform: translateX(-25%);
+  }
+}
 

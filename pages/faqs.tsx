@@ -1,13 +1,15 @@
-import React, {useEffect} from 'react';
-import {faqs} from "../data/faqs";
+import React from 'react';
 import FaqsArticle from "../components/faqs/faqs";
 import Head from "next/head";
+import getFaqs from "./api/faqs";
+import {FaqsType} from "../data/types";
+import {NextPage} from "next";
 
-const Faqs = () => {
-    useEffect(() => {
+type Props = {
+    faqs: FaqsType[]
+}
 
-    }, [])
-
+const Faqs: NextPage<Props> = ({faqs}) => {
     return (
         <main id={"main"} className="flex flex-col justify-start items-center p-8 pb-16 md:gap-16 gap-12">
             <Head>
@@ -22,7 +24,7 @@ const Faqs = () => {
 
                 <meta property="og:title" content="Faq"/>
                 <meta property="og:site_name" content="Oshot UK"/>
-                <meta property="og:url" content="oshot.uk"/>
+                <meta property="og:url" content="oshot.uk/faqs"/>
                 <meta property="og:description" content="In this page you'll find all the answers for the most common questions we have collected over time."/>
                 <meta property="og:type" content="article"/>
             </Head>
@@ -35,5 +37,14 @@ const Faqs = () => {
         </main>
     );
 };
+
+export const getStaticProps = () => {
+    const faqs: FaqsType[] = getFaqs()
+    return {
+        props: {
+            faqs
+        }, revalidate: 600
+    }
+}
 
 export default Faqs;
