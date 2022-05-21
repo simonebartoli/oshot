@@ -2,6 +2,7 @@ import React from 'react';
 import {NextPage} from "next";
 import {MdOutlineAlternateEmail} from "react-icons/md";
 import {BsGeoAltFill, BsTelephoneInbound} from "react-icons/bs";
+import Link from "next/link";
 
 const Footer: NextPage<{heightRef: any}> = ({heightRef}) => {
     return (
@@ -13,7 +14,9 @@ const Footer: NextPage<{heightRef: any}> = ({heightRef}) => {
                         <div>
                             <span>More Info on: <a rel={"noreferrer"} target="_blank" className="hover:text-green-500 transition duration-200" href="https://drswclinics.com">drswclinics.com</a></span>
                             <span> | </span>
-                            <span className="hover:text-green-500 transition duration-200">Privacy</span>
+                            <Link href={"/privacy"}>
+                                <a className="hover:text-green-500 transition duration-200">Privacy</a>
+                            </Link>
                         </div>
                         <span>Treatment Provided By Dr SW Clinics | All Right Reserved &reg;</span>
                     </div>

@@ -7,9 +7,11 @@
     height: 120px;
     border-radius: 100%;
     position: relative;
+    filter: none !important;
 }
 
 .halfCircleSpinner .circle1 {
+    filter: none !important;
     content: "";
     position: absolute;
     width: 100%;
@@ -21,6 +23,7 @@
 }
 
 .halfCircleSpinner .circle2 {
+    filter: none !important;
     content: "";
     position: absolute;
     width: 100%;

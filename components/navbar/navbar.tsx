@@ -22,7 +22,7 @@ const Navbar: NextPage<{heightRef: any}> = ({heightRef}) => {
     const links: (string[] | string)[] = [
         ["/about", "/testimonials"],
         ["/sexual dysfunction", "/incontinence", "lichen-sclerosus"],
-        "undefined", "/videos", "/faqs", "/press/", "undefined", "undefined"
+        "undefined", "/videos", "/faqs", "/press/", "undefined", "/contact"
     ]
 
 
