@@ -22,6 +22,9 @@ module.exports = {
       },
       screens: {
         "xls": "1152px"
+      },
+      fontFamily:{
+        homeTitle: ['Assistant']
       }
     },
   },

@@ -1,3 +1,4 @@
+Sitemap: /api/sitemap
 User-Agent: *
 Allow: /
-
+Disallow: /api/*

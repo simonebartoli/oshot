@@ -4,7 +4,7 @@ import Head from "next/head";
 import getFaqs from "./api/faqs";
 import {FaqsType} from "../data/types";
 import {NextPage} from "next";
-import {faqsJSONLD} from "../data/jsonld";
+import {faqsJSONLD} from "../data/jsonld/faqs-jsonld";
 
 type Props = {
     faqs: FaqsType[]

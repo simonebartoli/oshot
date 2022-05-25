@@ -1,9 +1,23 @@
 import type {NextPage} from 'next'
 import Head from "next/head";
 
-const Home: NextPage = () => {
+import React from "react";
+import Homepage from "../components/index/homepage";
+import Reasons from "../components/index/reasons";
+import Reviews from "../components/index/reviews";
+import Doctor from "../components/index/doctor";
+import Benefits from "../components/index/benefits";
+import Contact from "../components/index/contact";
+import {TestimonialsCombinedType, TestimonialsType} from "../data/types";
+import getTestimonials from "./api/testimonials";
+
+type Props = {
+    testimonials: TestimonialsCombinedType[]
+}
+
+const Home: NextPage<Props> = ({testimonials}) => {
     return (
-        <main id={"main"} className="flex flex-col align-middle justify-center w-full text-4xl">
+        <main id={"main"} className="flex flex-col items-center w-full text-4xl">
             <Head>
                 <title>Oshot UK - Improve Vaginal Stimulation</title>
                 <meta name="description"
@@ -16,9 +30,27 @@ const Home: NextPage = () => {
                 <meta name="language" content="English"/>
                 <meta name="author" content="Sherif Wakil"/>
             </Head>
-            <h2>This is the content</h2>
+            <Homepage/>
+            <Reasons/>
+            <Reviews testimonials={testimonials}/>
+            <Doctor/>
+            <Benefits/>
+            <Contact/>
         </main>
     )
+}
+
+export const getStaticProps = () => {
+    const fetch: TestimonialsType = getTestimonials()
+    const testimonials = [
+        ...fetch.articlesLeft,
+        ...fetch.articlesRight
+    ]
+    return {
+        props: {
+            testimonials
+        }
+    }
 }
 
 export default Home

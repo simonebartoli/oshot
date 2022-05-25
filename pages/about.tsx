@@ -3,6 +3,7 @@ import styles from '../styles/about.module.css'
 import Image from "next/image";
 import photo from "../public/media/photos/about-me.jpg"
 import Head from "next/head";
+import {aboutJSONLD} from "../data/jsonld/about-jsonld";
 
 const About = () => {
     return (
@@ -22,6 +23,12 @@ const About = () => {
                 <meta property="og:description" content="Who is Dr. Sherif Wakil? Dr Sherif Wakil is the founder and medical director of DrSW Clinics and Royale Skin with more than two decades of experience."/>
                 <meta property="og:type" content="books.author"/>
                 <meta property="og:image" content="https://oshot.uk/wp-content/uploads/2015/02/compli-drswclinics-about.jpg"/>
+
+                <script key={"about-JSONLD"} type={"application/ld+json"}
+                        dangerouslySetInnerHTML={{
+                            __html: JSON.stringify(aboutJSONLD())
+                        }}
+                />
             </Head>
             <h1 className="text-4xl">Dr. Sherif Wakil, MBBCh BA FICS</h1>
             <article className="flex sm:flex-row flex-col sm:gap-8 gap-12">

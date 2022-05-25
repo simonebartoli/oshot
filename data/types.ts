@@ -31,6 +31,12 @@ export type TestimonialsType = {
     }]
 }
 
+export type TestimonialsCombinedType = {
+    title: string
+    author: string
+    message: string
+}
+
 export type VideosType = {
     title: string
     description: string

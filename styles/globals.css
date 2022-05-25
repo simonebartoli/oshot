@@ -47,6 +47,26 @@ a {
   transform-origin: bottom left;
 }
 
+.stroke-text{
+  text-shadow:
+    -1px -1px 0 lightgrey,
+    1px -1px 0 lightgrey,
+    -1px 1px 0 lightgrey,
+    1px 1px 0 lightgrey;
+}
+.home-container{
+  background: rgb(225,229,232);
+  background: linear-gradient(59deg, rgba(225,229,232,1) 0%, rgba(235,236,240,1) 100%);
+
+}
+
+.navigationBar{
+  position: absolute;
+  width: 100%;
+  bottom: 0 !important;
+  left: 0;
+}
+
 
 @keyframes marginDown {
   0% {

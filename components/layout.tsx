@@ -17,7 +17,12 @@ const Layout: NextPage<Props> = ({children}) => {
         setTimeout(() => {
             const toRemove = navHeightRef.current!.clientHeight + footerHeightRef.current!.clientHeight
             document.getElementById("main")!.style.minHeight = `${total - toRemove}px`
+            const fullPage = Array.from(document.getElementsByClassName("full-page") as HTMLCollectionOf<HTMLElement>)
+            fullPage.forEach(element => {
+                element.style.height = `${total - navHeightRef.current!.clientHeight}px`
+            })
         }, 10)
+
     })
 
     return (

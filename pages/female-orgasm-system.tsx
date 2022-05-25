@@ -1,6 +1,7 @@
 import React from 'react';
 import {AiOutlineSend} from "react-icons/ai";
 import Head from "next/head";
+import {femaleOrgasmSystemJSONLD} from "../data/jsonld/female-orgasm-system-jsonld";
 
 const FemaleOrgasmSystem = () => {
     return (
@@ -25,6 +26,11 @@ const FemaleOrgasmSystem = () => {
                 <meta name="twitter:title" content={"Conditions - Oshot UK"}/>
                 <meta name="twitter:description" content={"In this page you will find why could you need a therapy and what problems Oshot could solve over time"}/>
                 {/*<meta name="twitter:image" content={article.path}/>*/}
+                <script key={"female-JSONLD"} type={"application/ld+json"}
+                        dangerouslySetInnerHTML={{
+                            __html: JSON.stringify(femaleOrgasmSystemJSONLD())
+                        }}
+                />
             </Head>
             <h1 className="text-4xl text-center">Female Orgasm System</h1>
             <article className="flex flex-col gap-8 sm:w-3/4 w-full">
