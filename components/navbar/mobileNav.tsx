@@ -2,24 +2,25 @@ import React, {useEffect, useState} from 'react';
 import {AiOutlineBars} from "react-icons/ai";
 import {NextPage} from "next";
 import MobileNavElements from "./elements/mobileNavElements";
+import {useLayoutContext} from "../../contexts/layout-context";
 
 type Props = {
-    height: number
     elements: string[]
     subElements: (string[] | undefined)[]
     links: (string[] | string)[]
 }
 // RSC
-const MobileNav: NextPage<Props> = ({height, elements, subElements, links}) => {
+const MobileNav: NextPage<Props> = ({elements, subElements, links}) => {
+    const {navHeight} = useLayoutContext()
     const [toggle, setToggle]: any = useState(null)
     const [entitiesToggle, setEntitiesToggle] = useState([null, null])
     let entitiesIndex = -1
 
     useEffect(() => {
-        if(height>0){
-            document.getElementById("nav-mobile")!.style.top = `${height}px`
+        if(navHeight !== undefined){
+            document.getElementById("nav-mobile")!.style.top = `${navHeight}px`
         }
-    }, [height])
+    }, [navHeight])
     const switchToggle = () => {
         const rem = 16 //rem in px
         const heightAnimation = elements.length * (2*rem + 1.5*rem) // line height + padding

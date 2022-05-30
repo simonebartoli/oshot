@@ -57,7 +57,27 @@ a {
 .home-container{
   background: rgb(225,229,232);
   background: linear-gradient(59deg, rgba(225,229,232,1) 0%, rgba(235,236,240,1) 100%);
+}
 
+.homepage-image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.homepage-image:after {
+  position: absolute;
+  content:"";
+  height:100%;
+  width:100%;
+  top:0;
+  left:0;
+  background: linear-gradient(
+          rgba(0, 0, 0, 0.15),
+          rgba(0, 0, 0, 0.15)
+  );
 }
 
 .navigationBar{

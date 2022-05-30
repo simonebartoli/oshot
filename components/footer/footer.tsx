@@ -1,12 +1,22 @@
-import React from 'react';
-import {NextPage} from "next";
+import React, {useEffect} from 'react';
 import {MdOutlineAlternateEmail} from "react-icons/md";
 import {BsGeoAltFill, BsTelephoneInbound} from "react-icons/bs";
 import Link from "next/link";
+import {useLayoutContext} from "../../contexts/layout-context";
+import {useResizer} from "../../contexts/resizer-context";
 
-const Footer: NextPage<{heightRef: any}> = ({heightRef}) => {
+const Footer = () => {
+    const {footerRef, setFooterHeight} = useLayoutContext()
+    const {widthPage, heightPage} = useResizer()
+
+    useEffect(() => {
+        if(footerRef.current !== null){
+            setFooterHeight(footerRef.current.clientHeight)
+        }
+    }, [widthPage, heightPage])
+
     return (
-        <footer ref={heightRef} className="flex justify-center p-4 w-full bg-stone-900 min-h-max text-stone-200">
+        <footer ref={footerRef} className="flex justify-center p-4 w-full bg-stone-900 min-h-max text-stone-200">
             <div className="flex md:flex-row flex-col justify-evenly xls:w-11/12">
                 <div className="flex flex-col p-4 justify-between basis-2/5 md:gap-0 gap-4">
                     <span className="text-2xl uppercase">oshot uk</span>

@@ -5,7 +5,7 @@ import styles from "../../styles/home.module.css"
 
 const Doctor = () => {
     return (
-        <section className="flex flex-col items-center md:p-12 p-8 py-16 gap-16">
+        <section className="flex flex-col items-center md:p-12 p-8 lg:pb-16 gap-16">
             <h2 className="leading-[3rem] text-center">What does the Oshot doctor do?</h2>
             <article className="flex lg:flex-row flex-col gap-12 items-center">
                 <div className={styles.doctor}>
