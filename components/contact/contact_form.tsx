@@ -6,7 +6,7 @@ import React, {
     useState
 } from 'react';
 import styles from "../../styles/contact.form.module.css"
-import loader from "../../../ivaldi-italian-food/styles/loader.module.css"
+import loader from "../../styles/loader.module.css"
 import validator from "validator";
 import isMobilePhone = validator.isMobilePhone;
 import ReCAPTCHA from "react-google-recaptcha";
