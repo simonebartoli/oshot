@@ -1,0 +1,21 @@
+.about .swiper-wrapper{
+    align-items: center;
+    display: flex;
+    justify-items: center;
+}
+.about .swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.home-slider .swiper-wrapper{
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*justify-content: center;*/
+}
+.home-slider .swiper-slide{
+    /*flex-basis: 25%;*/
+}

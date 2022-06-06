@@ -7,6 +7,7 @@ module.exports = {
   theme: {
     screens: {
       "smx": "400px",
+      "smxl": "500px",
       ...defaultTheme.screens,
     },
     extend: {
@@ -21,10 +22,17 @@ module.exports = {
         arrowMove: "arrowMove 0.5s ease-in-out infinite"
       },
       screens: {
+        "mdx": "850px",
+        "lg": "1024px",
         "xls": "1152px"
       },
       fontFamily:{
         homeTitle: ['Assistant']
+      },
+      colors: {
+        'gold': "rgb(162, 123, 46)",
+        'silver': "rgb(192,192,192)",
+        'purple': "rgba(134,49,148,1)"
       }
     },
   },

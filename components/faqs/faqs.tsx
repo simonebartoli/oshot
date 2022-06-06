@@ -25,7 +25,7 @@ const FaqsArticle:NextPage<Props> = ({question, answer}) => {
             {(sizeWindow !== null && sizeWindow <= 768) ? <Waypoint onEnter={() => switchColor(true)} onLeave={() => switchColor(false)} bottomOffset={"60%"}/> : ""}
             <div className="
                  basis-5/12 flex items-center text-xl md:border-r-2 border-r-neutral-500
-                 self-stretch group-hover:text-green-600 group-hover:border-r-green-500 transition duration-200">
+                 self-stretch group-hover:text-gold group-hover:border-r-gold transition duration-200">
                 <h2 ref={ref} className="text-xl leading-8 md:basis-4/5">{question}</h2>
             </div>
             <p className="basis-1/2 leading-8 md:py-2">

@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect} from 'react';
 import Navbar from "./navbar/navbar";
 import Footer from "./footer/footer";
 import {NextPage} from "next";
@@ -10,13 +10,13 @@ type Props = {
 }
 
 const Layout: NextPage<Props> = ({children}) => {
-    const {navHeight, footerHeight} = useLayoutContext()
+    const {navHeight, footerHeight, mainRef, setMainHeight} = useLayoutContext()
     const {widthPage, heightPage} = useResizer()
-    const mainRef = useRef<HTMLDivElement>(null)
 
     useEffect(() => {
         if(navHeight !== undefined && footerHeight !== undefined && mainRef.current !== null){
             const toRemove = navHeight + footerHeight
+            setMainHeight(heightPage - toRemove)
             mainRef.current.style.minHeight = `${heightPage - toRemove}px`
         }
     }, [widthPage, heightPage, navHeight, footerHeight])

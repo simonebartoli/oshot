@@ -35,14 +35,14 @@ const IndexArticle: NextPage<Props> = ({id, title, brief, author, date, path}) =
 
         date?.classList.toggle("text-xl")
         date?.classList.toggle("text-neutral-500")
-        date?.classList.toggle("text-green-600")
+        date?.classList.toggle("text-gold")
 
         arrow?.classList.toggle("animate-arrowMove")
-        arrow?.classList.toggle("text-green-700")
+        arrow?.classList.toggle("text-gold")
         arrow?.classList.toggle("text-neutral-500")
 
         readMore?.classList.toggle("text-neutral-500")
-        readMore?.classList.toggle("text-green-600")
+        readMore?.classList.toggle("text-gold")
     }
 
     useEffect(() => {
@@ -70,7 +70,7 @@ const IndexArticle: NextPage<Props> = ({id, title, brief, author, date, path}) =
                         <FaAngleDoubleRight className="mt-[8px] scale-125 text-neutral-500 transition"/>
                     </span>
                     <Link href={`/press/${id}`}>
-                        <a ref={readMoreRef} className="text-neutral-500 hover:scale-110 hover:text-green-500 transition text-xl underline underline-offset-8">Read More</a>
+                        <a ref={readMoreRef} className="text-neutral-500 hover:scale-110 hover:text-gold transition text-xl underline underline-offset-8">Read More</a>
                     </Link>
                 </div>
             </div>

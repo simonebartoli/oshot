@@ -11,31 +11,31 @@ const Benefits = () => {
             <div className="flex pt-4 md:flex-row flex-col items-center justify-between md:gap-8 gap-12 lg:w-3/4 w-full">
                 <div className="flex flex-col gap-12 text-lg sm:w-4/5 smx:w-11/12 w-full">
                     <div className="flex flex-row items-center gap-4">
-                        <AiOutlineSend className="mt-1 basis-1/12 text-green-700"/>
+                        <AiOutlineSend className="mt-1 basis-1/12 text-purple"/>
                         <p className="leading-8 basis-11/12">
                             Younger, smoother skin of the vulva (lips of the vagina).
                         </p>
                     </div>
                     <div className="flex flex-row items-center gap-4">
-                        <AiOutlineSend className="mt-1 basis-1/12 text-green-700"/>
+                        <AiOutlineSend className="mt-1 basis-1/12 text-purple"/>
                         <p className="leading-8 basis-11/12">
                             A tighter introitus (vaginal opening)
                         </p>
                     </div>
                     <div className="flex flex-row items-center gap-4">
-                        <AiOutlineSend className="mt-1 basis-1/12 text-green-700"/>
+                        <AiOutlineSend className="mt-1 basis-1/12 text-purple"/>
                         <p className="leading-8 basis-11/12">
                             Increased arousal from clitoral stimulation
                         </p>
                     </div>
                     <div className="flex flex-row items-center gap-4">
-                        <AiOutlineSend className="mt-1 basis-1/12 text-green-700"/>
+                        <AiOutlineSend className="mt-1 basis-1/12 text-purple"/>
                         <p className="leading-8 basis-11/12">
                             Increased sexual desire
                         </p>
                     </div>
                     <div className="flex flex-row items-center gap-4">
-                        <AiOutlineSend className="mt-1 basis-1/12 text-green-700"/>
+                        <AiOutlineSend className="mt-1 basis-1/12 text-purple"/>
                         <p className="leading-8 basis-11/12">
                             Increased natural lubrication
                         </p>
@@ -43,31 +43,31 @@ const Benefits = () => {
                 </div>
                 <div className="flex flex-col gap-12 text-lg sm:w-4/5 smx:w-11/12 w-full">
                     <div className="flex flex-row items-center gap-4">
-                        <AiOutlineSend className="mt-1 basis-1/12 text-green-700"/>
+                        <AiOutlineSend className="mt-1 basis-1/12 text-purple"/>
                         <p className="leading-8 basis-11/12">
                             Increased ability to have a vaginal orgasm
                         </p>
                     </div>
                     <div className="flex flex-row items-center gap-4">
-                        <AiOutlineSend className="mt-1 basis-1/12 text-green-700"/>
+                        <AiOutlineSend className="mt-1 basis-1/12 text-purple"/>
                         <p className="leading-8 basis-11/12">
                             Stronger orgasms
                         </p>
                     </div>
                     <div className="flex flex-row items-center gap-4">
-                        <AiOutlineSend className="mt-1 basis-1/12 text-green-700"/>
+                        <AiOutlineSend className="mt-1 basis-1/12 text-purple"/>
                         <p className="leading-8 basis-11/12">
                             More frequent orgasms
                         </p>
                     </div>
                     <div className="flex flex-row items-center gap-4">
-                        <AiOutlineSend className="mt-1 basis-1/12 text-green-700"/>
+                        <AiOutlineSend className="mt-1 basis-1/12 text-purple"/>
                         <p className="leading-8 basis-11/12">
                             Decreased pain for those with dyspareunia (painful intercourse)
                         </p>
                     </div>
                     <div className="flex flex-row items-center gap-4">
-                        <AiOutlineSend className="mt-1 basis-1/12 text-green-700"/>
+                        <AiOutlineSend className="mt-1 basis-1/12 text-purple"/>
                         <p className="leading-8 basis-11/12">
                             Decreased urinary incontinence
                         </p>

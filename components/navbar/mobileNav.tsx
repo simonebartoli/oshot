@@ -3,18 +3,16 @@ import {AiOutlineBars} from "react-icons/ai";
 import {NextPage} from "next";
 import MobileNavElements from "./elements/mobileNavElements";
 import {useLayoutContext} from "../../contexts/layout-context";
+import {NavElements} from "../../data/navbar";
 
 type Props = {
-    elements: string[]
-    subElements: (string[] | undefined)[]
-    links: (string[] | string)[]
+    navElements: NavElements[]
 }
 // RSC
-const MobileNav: NextPage<Props> = ({elements, subElements, links}) => {
+const MobileNav: NextPage<Props> = ({navElements}) => {
     const {navHeight} = useLayoutContext()
     const [toggle, setToggle]: any = useState(null)
-    const [entitiesToggle, setEntitiesToggle] = useState([null, null])
-    let entitiesIndex = -1
+    const [closeNav, setCloseNav] = useState<null | boolean>(null)
 
     useEffect(() => {
         if(navHeight !== undefined){
@@ -23,29 +21,27 @@ const MobileNav: NextPage<Props> = ({elements, subElements, links}) => {
     }, [navHeight])
     const switchToggle = () => {
         const rem = 16 //rem in px
-        const heightAnimation = elements.length * (2*rem + 1.5*rem) // line height + padding
+        const heightAnimation = navElements.length * (2*rem + 1.5*rem) // line height + padding
         document.documentElement.style.setProperty("--maxHeight", `${heightAnimation}px`)
+
+        if(closeNav === null) setCloseNav(false)
+        else setCloseNav(!closeNav)
         if(toggle === null) setToggle(true)
         else setToggle(!toggle)
-        setEntitiesToggle([null, null])
     }
+
 
     return (
         <div className="xls:hidden flex flex-col">
-            <AiOutlineBars className="text-2xl hover:text-green-600 transition duration-300" onClick={switchToggle}/>
+            <AiOutlineBars className="text-2xl hover:text-gold transition duration-300" onClick={switchToggle}/>
             <div id={"nav-mobile"} className={`
             absolute left-0 flex-col justify-center overflow-hidden 
             items-center w-full drop-shadow-md bg-gray-100 ${toggle === true ? "flex animate-slideInDown": toggle === false ? "animate-slideOutUp" : "hidden"}`}>
-                {elements.map((element, index) => {
-                    entitiesIndex += 1
+                {navElements.map((element, index) => {
                     return(
                         <MobileNavElements
-                            key={index} element={element} sub={subElements[index]}
-                            toggle={subElements[index] !== undefined ? entitiesToggle : undefined}
-                            setToggle={subElements[index] !== undefined ? setEntitiesToggle : undefined}
-                            setNavToggle={setToggle}
-                            index={subElements[index] !== undefined ? entitiesIndex : undefined}
-                            links={links[index]}
+                            key={index} navElement={element}
+                            closeNav={closeNav} closeNavFunction={switchToggle}
                         />
                     )
                 })}

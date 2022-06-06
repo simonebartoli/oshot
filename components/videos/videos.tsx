@@ -22,7 +22,7 @@ const VideosArticle: NextPage<Props> = ({title, description, url}) => {
                         title={`Youtube Video - ${title}`}
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
-                        className="lg:w-2/3 w-full shadow-xl aspect-video p-2 border-2 outline outline-1 outline-offset-4 outline-green-600 border-green-600 rounded-lg"
+                        className="lg:w-2/3 w-full shadow-xl aspect-video p-2 border-2 outline outline-1 outline-offset-4 outline-gold border-gold rounded-lg"
                 >
                 </iframe>
             </div>

@@ -4,6 +4,9 @@ import MobileNav from "./mobileNav";
 import Link from "next/link";
 import {useResizer} from "../../contexts/resizer-context";
 import {useLayoutContext} from "../../contexts/layout-context";
+import Image from "next/image"
+import {navElements} from "../../data/navbar";
+import Logo from "../../public/media/photos/logo.png"
 
 const Navbar = () => {
     const {widthPage, heightPage} = useResizer()
@@ -19,33 +22,21 @@ const Navbar = () => {
         }
     }, [widthPage, heightPage])
 
-    const [elements] = useState(
-        ["about", "conditions", "female orgasm system", "videos", "faqs", "press", "training", "contact us"]
-    )
-    const [subElements] = useState(
-        [
-            ["about me", "testimonials"],
-            ["sexual dysfunction", "incontinence", "lichen-sclerosus"],
-            undefined, undefined, undefined, undefined, undefined, undefined
-        ]
-    )
-    const [links] = useState<(string[] | string)[]>(
-        [
-            ["/about", "/testimonials"],
-            ["/conditions#sexual-dysfunction", "/conditions#incontinence", "/conditions#lichen-sclerosus"],
-            "/female-orgasm-system", "/videos", "/faqs", "/press/", "/undefined", "/contact"
-        ]
-    )
+
 
     return (
-        <nav ref={navbarRef} className="sticky z-40 top-0 left-0 flex flex-row justify-between items-center bg-white drop-shadow-xl w-full px-6 xls:py-0 py-6">
-            <Link href={"/"}>
-                <a className="uppercase">Oshot uk</a>
-            </Link>
+        <nav ref={navbarRef} className="sticky z-40 top-0 left-0 flex flex-row justify-between items-center bg-white drop-shadow-xl w-full px-4 xls:py-0 py-6">
+            <div className="xls:basis-1/12 md:basis-[15%] sm:basis-1/6 basis-[25%] cursor-pointer">
+                <Link href={"/"}>
+                    <div className="flex flex-col items-center justify-center">
+                        <Image src={Logo} alt="Oshot Logo"/>
+                    </div>
+                </Link>
+            </div>
             {showDesktop ?
-                <DesktopNav elements={elements} subElements={subElements} links={links}/>
+                <DesktopNav navElements={navElements}/>
                 :
-                <MobileNav elements={elements} subElements={subElements} links={links}/>
+                <MobileNav navElements={navElements}/>
             }
         </nav>
     );

@@ -22,10 +22,10 @@ const Footer = () => {
                     <span className="text-2xl uppercase">oshot uk</span>
                     <div className="flex flex-col gap-4">
                         <div>
-                            <span>More Info on: <a rel={"noreferrer"} target="_blank" className="hover:text-green-500 transition duration-200" href="https://drswclinics.com">drswclinics.com</a></span>
+                            <span>More Info on: <a rel={"noreferrer"} target="_blank" className="hover:text-gold transition duration-200" href="https://drswclinics.com">drswclinics.com</a></span>
                             <span> | </span>
                             <Link href={"/privacy"}>
-                                <a className="hover:text-green-500 transition duration-200">Privacy</a>
+                                <a className="hover:text-gold transition duration-200">Privacy</a>
                             </Link>
                         </div>
                         <span>Treatment Provided By Dr SW Clinics | All Right Reserved &reg;</span>
@@ -35,15 +35,15 @@ const Footer = () => {
                     <span className="text-xl">Contact Us:</span>
                     <div className="flex md:flex-row flex-col md:items-center justify-between gap-12 md:gap-0">
                         <div className="flex flex-col gap-4">
-                            <div className="flex flex-row gap-4 w-fit items-center cursor-pointer hover:text-green-500 transition duration-200">
+                            <div className="flex flex-row gap-4 w-fit items-center cursor-pointer hover:text-gold transition duration-200">
                                 <MdOutlineAlternateEmail/>
-                                <a href={"mailto: email@domain.com"}>email@domain.com</a>
+                                <a href={"mailto: email@domain.com"}>info@drswclinics.com</a>
                             </div>
-                            <div className="flex flex-row gap-4 w-fit items-center cursor-pointer hover:text-green-500 transition duration-200">
+                            <div className="flex flex-row gap-4 w-fit items-center cursor-pointer hover:text-gold transition duration-200">
                                 <BsGeoAltFill/>
                                 <a rel="noreferrer" target="_blank" href="https://www.google.com/maps/place/Dr+SW+Plastic+Surgery+London/@51.519817,-0.147625,17z/data=!4m5!3m4!1s0x0:0x8943ef774b03be2a!8m2!3d51.519817!4d-0.147625?hl=en">77 Harley Street London W1G 8QN </a>
                             </div>
-                            <div className="flex flex-row gap-4 w-fit items-center cursor-pointer hover:text-green-500 transition duration-200">
+                            <div className="flex flex-row gap-4 w-fit items-center cursor-pointer hover:text-gold transition duration-200">
                                 <BsTelephoneInbound/>
                                 <a href={"tel: 020 3006 8459"}>020 3006 8459</a>
                             </div>

@@ -3,13 +3,14 @@ import Head from "next/head";
 
 import React from "react";
 import Homepage from "../components/index/homepage";
-import Reasons from "../components/index/reasons";
+import WhyYouNeedIt from "../components/index/whyYouNeedIt";
 import Reviews from "../components/index/reviews";
-import Doctor from "../components/index/doctor";
-import Benefits from "../components/index/benefits";
 import Contact from "../components/index/contact";
 import {TestimonialsCombinedType, TestimonialsType} from "../data/types";
 import getTestimonials from "./api/testimonials";
+import WhatIsIt from "../components/index/whatIsIt";
+import WhoAreWe from "../components/index/whoAreWe";
+import Gallery from "../components/index/gallery";
 
 type Props = {
     testimonials: TestimonialsCombinedType[]
@@ -31,10 +32,13 @@ const Home: NextPage<Props> = ({testimonials}) => {
                 <meta name="author" content="Sherif Wakil"/>
             </Head>
             <Homepage/>
-            <Reasons/>
+            <WhyYouNeedIt/>
+            <WhatIsIt/>
             <Reviews testimonials={testimonials}/>
-            <Doctor/>
-            <Benefits/>
+            <WhoAreWe/>
+            {/*<Doctor/>*/}
+            <Gallery/>
+            {/*<Benefits/>*/}
             <Contact/>
         </main>
     )

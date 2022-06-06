@@ -57,7 +57,7 @@ const PressArticle: NextPage<Props> = ({articleData, article}) => {
                                 case "citation":
                                     return(
                                         <div key={index} className="text-center py-8">
-                                            <span className="italic text-lg capitalize text-green-700">{element.message}</span>
+                                            <span className="italic text-lg capitalize text-gold">{element.message}</span>
                                         </div>
                                     )
                                 case "reference":
@@ -70,7 +70,7 @@ const PressArticle: NextPage<Props> = ({articleData, article}) => {
                         })
                     }
                 </article>
-                <aside className="order-1 md:order-2 md:sticky md:top-[10%] flex flex-col basis-1/3 gap-8 py-4 border-2 border-black border-t-4 rounded-b-lg border-t-green-500 items-center bg-neutral-50">
+                <aside className="order-1 md:order-2 md:sticky md:top-[10%] flex flex-col basis-1/3 gap-8 py-4 border-2 border-black border-t-4 rounded-b-lg border-t-gold items-center bg-neutral-50">
                     <h1 className={"text-2xl text-center"}>{article.title}</h1>
                     <div className="flex flex-col lg:flex-row md:flex-col smx:flex-row md:justify-between justify-evenly  w-4/5 gap-8 items-center">
                         <div className={styles.article}>

@@ -9,8 +9,8 @@ const Incontinence: NextPage<Props> = ({selected}) => {
     return (
         <article className="flex flex-col sm:gap-6 gap-10 relative">
             <span className="absolute -top-20" id={"incontinence"}/> {/*ANCHOR LINK*/}
-            <h2 className={`text-2xl transition font-semibold ${selected ? "text-green-600" : "text-neutral-500"} sm:text-left text-center`}>Incontinence</h2>
-            <div className={`flex md:flex-row flex-col md:gap-16 gap-6 justify-center items-center smx:border-2 ${selected ? "border-green-600" : "border-neutral-500"} sm:p-6 smx:p-10 p-0 smx:py-8 py-2 rounded-lg transition`}>
+            <h2 className={`text-2xl transition font-semibold ${selected ? "text-gold" : "text-neutral-500"} sm:text-left text-center`}>Incontinence</h2>
+            <div className={`flex md:flex-row flex-col md:gap-16 gap-6 justify-center items-center smx:border-2 ${selected ? "border-gold" : "border-neutral-500"} sm:p-6 smx:p-10 p-0 smx:py-8 py-2 rounded-lg transition`}>
                 <div className="space-y-6 basis-1/3 grow">
                     <h3 className="text-xl">What is it?</h3>
                     <div className="space-y-4">

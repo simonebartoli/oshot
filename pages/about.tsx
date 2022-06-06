@@ -1,9 +1,12 @@
 import React from 'react';
 import styles from '../styles/about.module.css'
 import Image from "next/image";
-import photo from "../public/media/photos/about-me.jpg"
+import photo from "../public/media/photos/about.png"
 import Head from "next/head";
 import {aboutJSONLD} from "../data/jsonld/about-jsonld";
+
+import "swiper/css/bundle";
+import Slider from "../components/about/slider";
 
 const About = () => {
     return (
@@ -31,6 +34,7 @@ const About = () => {
                 />
             </Head>
             <h1 className="text-4xl">Dr. Sherif Wakil, MBBCh BA FICS</h1>
+            <Slider/>
             <article className="flex sm:flex-row flex-col sm:gap-8 gap-12">
                 <figure className="flex justify-center items-center basis-1/3">
                     <div className={styles.about}>

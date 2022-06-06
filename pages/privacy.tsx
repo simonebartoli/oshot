@@ -29,13 +29,13 @@ const Privacy = () => {
             <h1 className="text-4xl">Privacy</h1>
             <article className="flex flex-col gap-8 sm:w-3/4 w-full px-4">
                 <div className="space-y-4">
-                    <h2 className="text-xl font-semibold text-green-700">Copyright Notice</h2>
+                    <h2 className="text-xl font-semibold text-gold">Copyright Notice</h2>
                     <p className="leading-8">
                         All editorial content and graphics on this site are protected by U.S. copyright and international treaties and may not be copied without the express permission of the copyright holder, which reserves all rights. Re-use of any of editorial content and/or graphics online for any purpose is strictly prohibited. The materials from this site are not available for commercial, informational or noncommercial uses online or offline unless express written permission is given. Copying or adapting the HTML or any other language created to generate these pages is also strictly prohibited and protected by copyright. Certain content and graphics originating from the federal government are not covered under copyright.
                     </p>
                 </div>
                 <div className="space-y-6">
-                    <h2 className="text-xl font-semibold text-green-700">Privacy Notice Table of Contents</h2>
+                    <h2 className="text-xl font-semibold text-gold">Privacy Notice Table of Contents</h2>
                     <div className="flex flex-col gap-6">
                         <div className="flex flex-row items-center gap-4">
                             <AiOutlineSend className="mt-1"/>
@@ -60,13 +60,13 @@ const Privacy = () => {
                     </div>
                 </div>
                 <div className="space-y-4">
-                    <h3 className="text-xl font-medium text-green-700">Our Commitment To Privacy</h3>
+                    <h3 className="text-xl font-medium text-gold">Our Commitment To Privacy</h3>
                     <p className="leading-8">
                         All editorial content and graphics on this site are protected by U.S. copyright and international treaties and may not be copied without the express permission of the copyright holder, which reserves all rights. Re-use of any of editorial content and/or graphics online for any purpose is strictly prohibited. The materials from this site is not available for commercial, informational or noncommercial uses online or offline unless express written permission is given. Copying or adapting the HTML or any other language created to generate these pages is also strictly prohibited and protected by copyright. Certain content and graphics originating from the federal government are not covered under copyright.
                     </p>
                 </div>
                 <div className="space-y-4">
-                    <h3 className="text-xl font-medium text-green-700">The Information We Collect</h3>
+                    <h3 className="text-xl font-medium text-gold">The Information We Collect</h3>
                     <p className="leading-8">
                         This notice applies to all information collected or submitted on any of our websites. On some pages, you can order products, make requests, and register to receive materials. The types of personal information collected at these pages are:
                     </p>
@@ -123,7 +123,7 @@ const Privacy = () => {
                     </div>
                 </div>
                 <div className="space-y-4">
-                    <h3 className="text-xl font-medium text-green-700">The Way We Use Information</h3>
+                    <h3 className="text-xl font-medium text-gold">The Way We Use Information</h3>
                     <p className="leading-8">
                         We use the information you provide about yourself when placing an order only to complete that order. We do not share this information with outside parties except to the extent necessary to complete that order.
                     </p>
@@ -141,13 +141,13 @@ const Privacy = () => {
                     </p>
                 </div>
                 <div className="space-y-4">
-                    <h3 className="text-xl font-medium text-green-700">Our Commitment To Data Security</h3>
+                    <h3 className="text-xl font-medium text-gold">Our Commitment To Data Security</h3>
                     <p className="leading-8">
                         To prevent unauthorized access, maintain data accuracy, and ensure the correct use of information, we have put in place appropriate physical, electronic, and managerial procedures to safeguard and secure the information we collect online.
                     </p>
                 </div>
                 <div className="space-y-4">
-                    <h3 className="text-xl font-medium text-green-700">How To Access Or Correct Your Information</h3>
+                    <h3 className="text-xl font-medium text-gold">How To Access Or Correct Your Information</h3>
                     <p className="leading-8">
                         You can correct factual errors in your personally identifiable information by sending us a request that credibly shows error.
                     </p>

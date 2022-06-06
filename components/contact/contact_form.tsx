@@ -81,12 +81,12 @@ const ContactForm = () => {
         const response = await result.json()
         if(response === "OK"){
             responseRef.current!.classList.remove("text-red-600")
-            responseRef.current!.classList.add("text-green-600")
+            responseRef.current!.classList.add("text-gold")
             setResponse("Your Request Has Been Received")
             reset()
         }else{
             responseRef.current!.classList.add("text-red-600")
-            responseRef.current!.classList.remove("text-green-600")
+            responseRef.current!.classList.remove("text-gold")
             setResponse("We have a problem with your request, please try again later")
         }
         formRef.current!.classList.toggle("blur-sm")
@@ -105,7 +105,7 @@ const ContactForm = () => {
     }
     const changeStyle = (element: HTMLInputElement | HTMLTextAreaElement, status: boolean) => {
         if(!status) element.style.border = "2px solid red"
-        else element.style.border = "2px solid rgb(34 197 94)"
+        else element.style.border = "2px solid rgb(192,192,192)"
     }
 
     const onChangeName = (e: ChangeEvent<HTMLInputElement>) => {
@@ -241,7 +241,7 @@ const ContactForm = () => {
                     </div>
                     <textarea id={"message"} value={message} onChange={(e) => setMessage(e.target.value)} onBlur={onChangeMessage} required={true} className={styles.contactForm} name="" rows={10} placeholder={"Please state your request here..."}></textarea>
                 </div>
-                <input disabled={buttonDisabled} className="w-full disabled:text-black disabled:font-normal disabled:cursor-not-allowed disabled:bg-neutral-300 transition bg-green-500 font-semibold text-white cursor-pointer border-2 border-black p-4 shadow-lg" type="submit" value={"Submit Request"}/>
+                <input disabled={buttonDisabled} className="w-full disabled:text-black disabled:font-normal disabled:cursor-not-allowed disabled:bg-silver transition bg-purple font-semibold text-white cursor-pointer border-2 border-black p-4 shadow-lg rounded-md" type="submit" value={"Submit Request"}/>
                 <span ref={responseRef} className="text-lg text-center">{response}</span>
             </form>
             <div ref={loaderRef} className={loader.halfCircleSpinner} style={{display: "none", position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)"}}>
