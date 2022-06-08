@@ -1,20 +1,16 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useRef} from 'react';
 import Image from "next/image";
 import DoctorImage from "../../public/media/photos/index/doctor.jpg"
 import {BsCalendarWeek} from "react-icons/bs";
 import {RiCalendarTodoFill, RiNumber1} from "react-icons/ri";
 import {AiOutlineTrophy} from "react-icons/ai";
 import {FaRegHospital} from "react-icons/fa";
-import {useResizer} from "../../contexts/resizer-context";
+import Link from "next/link";
 
 const WhoAreWe = () => {
-    const {widthPage} = useResizer()
     const imageRef = useRef<HTMLDivElement>(null)
     const sectionRef = useRef<HTMLDivElement>(null)
 
-    useEffect(() => {
-
-    }, [widthPage])
 
     return (
         <section className="w-full flex flex-col p-8 py-16 items-center justify-center bg-gold text-white gap-20">
@@ -70,8 +66,12 @@ const WhoAreWe = () => {
                 </div>
             </div>
             <div className="flex sm:flex-row flex-col items-center justify-center w-full lg:w-3/4 xls:w-1/2 gap-8">
-                <a href="" className="bg-purple hover:bg-white hover:text-black transition text-lg p-4 sm:basis-1/3 sm:grow w-full grow text-center shadow-lg rounded-lg">Read More About Me</a>
-                <a href="" className="bg-white hover:bg-purple hover:text-white transition text-black text-lg p-4 sm:basis-1/3 sm:grow w-full grow text-center shadow-lg rounded-lg">Look My Awards</a>
+                <Link href="/about">
+                    <a className="bg-purple hover:bg-white hover:text-black transition text-lg p-4 sm:basis-1/3 sm:grow w-full grow text-center shadow-lg rounded-lg">Read More About Me</a>
+                </Link>
+                <Link href={"/awards"}>
+                    <a className="bg-white hover:bg-purple hover:text-white transition text-black text-lg p-4 sm:basis-1/3 sm:grow w-full grow text-center shadow-lg rounded-lg">Look My Awards</a>
+                </Link>
             </div>
         </section>
     );

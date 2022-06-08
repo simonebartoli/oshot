@@ -42,3 +42,10 @@ export type VideosType = {
     description: string
     url: string
 }
+
+export type GalleryType = {
+    hashBefore: string
+    before: string
+    hashAfter: string
+    after: string
+}

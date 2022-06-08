@@ -38,6 +38,12 @@ export const navElements: NavElements[] = [
                 interaction: {
                     link: "/testimonials"
                 }
+            },
+            {
+                name: "awards",
+                interaction: {
+                    link: "/awards"
+                }
             }
         ]
     },
@@ -76,11 +82,22 @@ export const navElements: NavElements[] = [
     },
     {
         ...defaultParams,
-        name: "videos",
+        name: "gallery",
         type: "standard",
-        interaction: {
-            link: "/videos"
-        }
+        subMenu: [
+            {
+                name: "photo",
+                interaction: {
+                    link: "/photos"
+                }
+            },
+            {
+                name: "videos",
+                interaction: {
+                    link: "/videos"
+                }
+            }
+        ]
     },
     {
         ...defaultParams,

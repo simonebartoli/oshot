@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "next/link";
 
 const Gallery = () => {
     return (
@@ -12,7 +13,9 @@ const Gallery = () => {
                 <span className="font-semibold text-gold text-center">+100 Operations</span>
                 <span className="font-semibold text-gold text-center">+100 Photos</span>
             </div>
-            <a href="" className="sm:w-1/2 w-full text-lg p-4 text-white bg-purple rounded-lg shadow-lg text-center hover:bg-gold transition">Look Our Gallery</a>
+            <Link href={"/photos"}>
+                <a className="sm:w-1/2 w-full text-lg p-4 text-white bg-purple rounded-lg shadow-lg text-center hover:bg-gold transition">Look Our Gallery</a>
+            </Link>
         </section>
     );
 };
