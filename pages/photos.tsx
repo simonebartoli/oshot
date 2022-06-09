@@ -89,7 +89,7 @@ export const getStaticProps = () => {
     return {
         props: {
             gallery
-        }
+        }, revalidate: 3600
     }
 }
 

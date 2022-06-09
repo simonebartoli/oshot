@@ -37,7 +37,7 @@ const WhyYouNeedIt = () => {
                         <span className="mdx:text-2xl lg:!text-3xl sm:text-3xl text-2xl">No Side Effect</span>
                     </div>
                 </div>
-                <div className="grid mdx:grid-cols-2 grid-cols-1 items-center justify-around gap-24 pb-12 lg:!w-4/5 w-full">
+                <div className="grid mdx:grid-cols-2 grid-cols-1 items-center justify-around gap-24 pb-12 lg:!w-11/12 w-full">
                     <div className="flex flex-row items-center mdx:justify-center justify-start gap-10">
                         <div className="relative">
                             <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-black shadow-md border-[1px] sm:p-8 p-7 bg-gold rounded-full z-0"/>
@@ -50,7 +50,7 @@ const WhyYouNeedIt = () => {
                             <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-black shadow-md border-[1px] sm:p-8 p-7 bg-gold rounded-full z-0"/>
                             <MdOutlineMedicalServices className="relative z-10 text-white"/>
                         </div>
-                        <span className="mdx:text-2xl lg:!text-3xl sm:text-3xl text-2xl">Many Diseases Solver</span>
+                        <span className="mdx:text-2xl lg:!text-3xl sm:text-3xl text-2xl">Improve Sexual WellBeing</span>
                     </div>
                 </div>
             </div>

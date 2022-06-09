@@ -43,6 +43,16 @@ export type VideosType = {
     url: string
 }
 
+export type TrainingVideos = {
+    url1: string
+    url2?: string
+}
+
+export type TrainingCitations = {
+    message: string
+    name: string
+}
+
 export type GalleryType = {
     hashBefore: string
     before: string
