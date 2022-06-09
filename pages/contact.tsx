@@ -44,7 +44,7 @@ const Contact = () => {
                         </div>
                         <div className="flex flex-row gap-4 items-center">
                             <MdOutlineAlternateEmail className="text-xl"/>
-                            <a className="text-xl hover-underline-animation hover:text-gold transition" href={"mailto: email@domain.com"}>email@domain.com</a>
+                            <a className="text-xl hover-underline-animation hover:text-gold transition" href={"mailto: info@drswclinics.com"}>info@drswclinics.com</a>
                         </div>
                     </div>
                 </article>

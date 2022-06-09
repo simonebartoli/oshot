@@ -4,6 +4,7 @@ import Head from "next/head";
 import getArticles from "../api/press";
 import {NextPage} from "next";
 import {ArticleListType} from "../../data/types";
+import {DateTime} from "luxon";
 
 type Props = {
     press: ArticleListType[]
@@ -52,7 +53,14 @@ const Index: NextPage<Props> = (props) => {
 };
 
 export const getStaticProps = () => {
-    const press = getArticles()
+    const press: ArticleListType[] = getArticles()
+    press.sort((a, b) => {
+        const dateA = DateTime.fromFormat(a.date, "MMMM, yyyy")
+        const dateB = DateTime.fromFormat(b.date, "MMMM, yyyy")
+        if(dateA>dateB) return -1
+        else return 1
+    })
+
     return {
         props: {
             press

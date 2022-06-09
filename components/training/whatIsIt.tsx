@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from "next/image";
 import Photo from "../../public/media/photos/training/cropped-IAAGSW-final.png";
+import Link from "next/link";
 
 const WhatIsIt = () => {
     return (
@@ -32,7 +33,9 @@ const WhatIsIt = () => {
                 </p>
                 <div className="flex sm:flex-row flex-col justify-evenly w-full items-center gap-4">
                     <span className="underline underline-offset-8 text-xl">Are you Interested?</span>
-                    <a className="p-4 sm:w-1/2 w-full my-4 text-center bg-purple transition hover:bg-gold text-lg rounded-lg text-white cursor-pointer">Contact Us</a>
+                    <Link href="/contact">
+                        <a className="p-4 sm:w-1/2 w-full my-4 text-center bg-purple transition hover:bg-gold text-lg rounded-lg text-white cursor-pointer">Contact Us</a>
+                    </Link>
                 </div>
             </div>
         </section>

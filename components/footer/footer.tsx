@@ -37,7 +37,7 @@ const Footer = () => {
                         <div className="flex flex-col gap-4">
                             <div className="flex flex-row gap-4 w-fit items-center cursor-pointer hover:text-gold transition duration-200">
                                 <MdOutlineAlternateEmail/>
-                                <a href={"mailto: email@domain.com"}>info@drswclinics.com</a>
+                                <a href={"mailto: info@drswclinics.com"}>info@drswclinics.com</a>
                             </div>
                             <div className="flex flex-row gap-4 w-fit items-center cursor-pointer hover:text-gold transition duration-200">
                                 <BsGeoAltFill/>

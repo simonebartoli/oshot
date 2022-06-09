@@ -1,18 +1,66 @@
 [
     {
         "id": 1,
-        "title": "This is a title",
+        "title": "58 Ways to be Happy",
         "brief": "A game-changing new treatment is giving women back control of their bodies as well as their sexual desire.",
         "date": "October, 2022",
-        "author": "Name Surname",
-        "path": "/media/photos/tatler-cover.jpg"
+        "author": "Tatler",
+        "path": "/media/photos/press/tatler-cover.jpg"
     },
     {
         "id": 2,
-        "title": "Manoto1 TV featuring O-Shot",
-        "brief": "Performed at the internationally renowned SWClinic in Harley Street London",
-        "date": "May, 2015",
-        "author": "Name Surname",
-        "path": "/media/photos/tatler-cover.jpg"
+        "title": "The Oshot Phenomenon",
+        "brief": "Women are paying £1000 to have their own blood injected into their vaginas in a bid to boost orgasms. Surgeons claim the procedure can revive your sex life.",
+        "date": "December, 2018",
+        "author": "Alison Maloney",
+        "path": "/media/photos/press/thesun.png"
+    },
+    {
+        "id": 3,
+        "title": "Would YOU do this to increase your SEX DRIVE?",
+        "brief": "OUCH: Women are going to new extremes to revive their libido… but is it worth it?",
+        "date": "November, 2015",
+        "author": "Lizzie Mulherin",
+        "path": "/media/photos/press/express.png"
+    },
+    {
+        "id": 4,
+        "title": "Want more orgasms? Get the 'O-shot'",
+        "brief": "£1,000 injection can boost your love life, experts claim",
+        "date": "February, 2017",
+        "author": "Stephen Matthews",
+        "path": "/media/photos/press/dailymail.png"
+    },
+    {
+        "id": 5,
+        "title": "I had a vampire vagina injection to get my libido back",
+        "brief": "Kim Kardashian had a vampire facial - but Sophia* had a version of the treatment to get her libido back...",
+        "date": "November, 2015",
+        "author": "Lynne Hyland",
+        "path": "/media/photos/press/mirror.png"
+    },
+    {
+        "id": 6,
+        "title": "How does the vaginal injection work?",
+        "brief": "The O-Shot is helping women across the country achieve orgasm and fix sexual dysfunction, but how does it work?",
+        "date": "August, 2020",
+        "author": "Ciara Sheppard",
+        "path": "/media/photos/press/thesun3.png"
+    },
+    {
+        "id": 7,
+        "title": "Dr Sherif Wakil launches sexual wellbeing association",
+        "brief": "Aesthetic practitioner Dr Sherif Wakil has launched The International Association of Aesthetic Gynaecology and Sexual Wellbeing (IAAGSW).",
+        "date": "January, 2017",
+        "author": "Aesthetic Journal",
+        "path": "/media/photos/press/Aesthetic.png"
+    },
+    {
+        "id": 8,
+        "title": "The Shape of Things to Come",
+        "brief": "Who is Dr Sherif Wakil and Why is the O Concept revolutionizing the sexual desire?",
+        "date": "September, 2020",
+        "author": "MilliOnAir",
+        "path": "/media/photos/press/millionair.png"
     }
 ]
