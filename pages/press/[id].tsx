@@ -6,7 +6,7 @@ import {useRouter} from "next/router";
 import Custom404 from "../404";
 import Loader from "../../components/loader";
 import getArticle from "../api/press/article";
-import getArticles from "../api/press";
+import {getArticles, getArticlesInt} from "../api/press";
 import {ArticleDataType, ArticleListType} from "../../data/types";
 import {NextPage} from "next";
 import Head from "next/head";
@@ -46,7 +46,7 @@ const PressArticle: NextPage<Props> = ({articleData, article}) => {
                 {/*<meta name="twitter:image" content={article.path}/>*/}
             </Head>
             <section className="flex md:flex-row flex-col justify-evenly items-start md:gap-14 gap-6">
-                <article className={"order-2 md:order-1 basis-2/3 sm:p-4 py-4"}>
+                <article className={"order-2 md:order-1 basis-2/3 sm:p-4 py-4"} dir={"auto"}>
                     {
                         articleData.map((element: any, index: number) => {
                             switch (element.type) {
@@ -70,7 +70,7 @@ const PressArticle: NextPage<Props> = ({articleData, article}) => {
                         })
                     }
                 </article>
-                <aside className="order-1 md:order-2 md:sticky md:top-[10%] flex flex-col basis-1/3 gap-8 py-4 border-2 border-black border-t-4 rounded-b-lg border-t-gold items-center bg-neutral-50">
+                <aside dir={"auto"} className="order-1 md:order-2 md:sticky md:top-[10%] flex flex-col basis-1/3 gap-8 py-4 border-2 border-black border-t-4 rounded-b-lg border-t-gold items-center bg-neutral-50">
                     <h1 className={"text-2xl text-center"}>{article.title}</h1>
                     <div className="flex flex-col lg:flex-row md:flex-col smx:flex-row md:justify-between justify-evenly  w-4/5 gap-8 items-center">
                         <div className={styles.article}>
@@ -90,7 +90,12 @@ const PressArticle: NextPage<Props> = ({articleData, article}) => {
 
 export const getStaticProps = (context: any) => {
     const id = context.params.id
-    const articles: ArticleListType[] = getArticles()
+    const articlesStandard: ArticleListType[] = getArticles()
+    const articlesInt: ArticleListType[] = getArticlesInt()
+    const articles = [
+        ...articlesStandard,
+        ...articlesInt
+    ]
 
     const articleData: ArticleDataType[] = getArticle(id)
     let article: ArticleListType | undefined | null = articles.find((element) => element.id == id)

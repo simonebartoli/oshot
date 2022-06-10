@@ -11,6 +11,8 @@ export type ArticleListType = {
     date: string
     author: string
     path: string
+    nation?: string
+    reading?: string
 }
 
 export type FaqsType = {

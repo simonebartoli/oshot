@@ -1,7 +1,7 @@
 import React from 'react';
 import IndexArticle from "../../components/press";
 import Head from "next/head";
-import getArticles from "../api/press";
+import {getArticles, getArticlesInt} from "../api/press";
 import {NextPage} from "next";
 import {ArticleListType} from "../../data/types";
 import {DateTime} from "luxon";
@@ -36,7 +36,7 @@ const Index: NextPage<Props> = (props) => {
                 </aside>
                 <div className="flex flex-col gap-24 lg:gap-36 w-full md:w-[80%]">
                     {
-                        props.press.map(({title, brief, author, date, id, path}, index) =>
+                        props.press.map(({title, brief, author, date, id, path, nation, reading}, index) =>
                         <IndexArticle key={index}
                                       id={id}
                                       title={title}
@@ -44,6 +44,8 @@ const Index: NextPage<Props> = (props) => {
                                       brief={brief}
                                       date={date}
                                       path={path}
+                                      nation={nation}
+                                      reading={reading}
                         />
                     )}
                 </div>
@@ -54,7 +56,14 @@ const Index: NextPage<Props> = (props) => {
 
 export const getStaticProps = () => {
     const press: ArticleListType[] = getArticles()
-    press.sort((a, b) => {
+    const pressInt: ArticleListType[] = getArticlesInt()
+
+    const pressFinal = [
+        ...press,
+        ...pressInt
+    ]
+
+    pressFinal.sort((a, b) => {
         const dateA = DateTime.fromFormat(a.date, "MMMM, yyyy")
         const dateB = DateTime.fromFormat(b.date, "MMMM, yyyy")
         if(dateA>dateB) return -1
@@ -63,7 +72,7 @@ export const getStaticProps = () => {
 
     return {
         props: {
-            press
+            press: pressFinal
         }, revalidate: 600
     }
 }

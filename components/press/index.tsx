@@ -14,9 +14,11 @@ type Props = {
     author: string,
     date: string,
     path: string
+    nation?: string
+    reading?: string
 }
 
-const IndexArticle: NextPage<Props> = ({id, title, brief, author, date, path}) => {
+const IndexArticle: NextPage<Props> = ({id, title, brief, author, date, path, nation, reading}) => {
     const iconRef: RefObject<HTMLElement> = useRef(null)
     const dateRef: RefObject<HTMLElement> = useRef(null)
     const arrowMovingRef: RefObject<HTMLElement> = useRef(null)
@@ -57,9 +59,12 @@ const IndexArticle: NextPage<Props> = ({id, title, brief, author, date, path}) =
             <div className={styles.press}>
                 <Image src={path} layout="fill"  alt={`Image - ${title}`} className={styles.image}/>
             </div>
-            <div className="sm:w-1/2 w-full flex flex-col gap-4 justify-evenly self-stretch">
+            <div className="sm:w-1/2 w-full flex flex-col gap-4 justify-evenly self-stretch" dir="auto">
                 <div>
-                    <h2 className="text-2xl">{`${title}`}</h2>
+                    {
+                        nation !== undefined && <span className="text-red-600 italic text-lg">International</span>
+                    }
+                    <h2 className="text-2xl">{title}</h2>
                     <span className="text-sm italic">{`${author} ${(widthPage !== null && widthPage < 768) ? " | " + date : ""}`}</span>
                 </div>
                 <p>
