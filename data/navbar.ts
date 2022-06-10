@@ -55,19 +55,19 @@ export const navElements: NavElements[] = [
             {
                 name: "sexual dysfunction",
                 interaction: {
-                    link: "/conditions#sexual-dysfunction"
+                    link: "/sexual-dysfunction"
                 }
             },
             {
                 name: "incontinence",
                 interaction: {
-                    link: "/conditions#incontinence"
+                    link: "/incontinence"
                 }
             },
             {
                 name: "lichen-sclerosus",
                 interaction: {
-                    link: "/conditions#lichen-sclerosus"
+                    link: "/lichen-sclerosus"
                 }
             }
         ]
