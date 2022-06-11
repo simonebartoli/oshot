@@ -4,9 +4,9 @@
     justify-items: center;
 }
 .gallery .swiper-wrapper{
-    align-items: center;
-    display: flex;
-    justify-items: center;
+    /*align-items: center;*/
+    /*display: flex;*/
+    /*justify-items: center;*/
 }
 .about .swiper-slide{
     display: flex;

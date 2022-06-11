@@ -23,6 +23,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
         const clientEmailSource = fs.readFileSync(path.join(process.cwd(), "/data/email/contact.hbs"))
         const template = handlebars.compile(clientEmailSource.toString())
         const htmlToSendClient = template({
+            receiver: `${name} ${surname}`,
             fullname: `${name} ${surname}`,
             header: "Your Request Has Been Received",
             text1: "We want to inform you that you request has been received correctly.",
@@ -33,7 +34,8 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
             message: message
         })
         const htmlToSendAdmin = template({
-            fullname: `Administrator`,
+            receiver: "Administrator",
+            fullname: `${name} ${surname}`,
             header: "A New Client Request Has Been Received",
             text1: "Oshot UK system wants to inform you that a new client request request has been received correctly.",
             text2: "Consider to respond within the next 48 hours.",

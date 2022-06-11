@@ -1,7 +1,4 @@
-import React from 'react';
-import {Swiper, SwiperSlide} from "swiper/react";
-import {Navigation} from "swiper";
-import "swiper/css/bundle";
+import React, {useEffect, useState} from 'react';
 
 import {NextPage} from "next";
 import SingleSlide from "./single_slide";
@@ -14,26 +11,51 @@ type Props = {
 }
 
 const Gallery: NextPage<Props> = ({explicit, gallery}) => {
+    const [galleryVisible, setGalleryVisible] = useState<GalleryType[]>([])
+    const [counter, setCounter] = useState(2)
+
+    useEffect(() => {
+        const membersToAdd = counter - galleryVisible.length
+        const firstIndex = galleryVisible.length
+        const finalIndex = galleryVisible.length + membersToAdd
+
+        const newMembers: GalleryType[] = []
+        for(let i = firstIndex; i < finalIndex; i++){
+            if(i < gallery.length) newMembers.push(gallery[i])
+        }
+
+        setGalleryVisible([
+            ...galleryVisible,
+            ...newMembers
+        ])
+
+    }, [counter])
+
+    const onLoadMore = () => {
+        setCounter(counter+2)
+    }
+
     return (
-        <Swiper
-            loop={true}
-            autoHeight={false}
-            draggable={true}
-            slidesPerView={1}
-            grabCursor={true}
-            navigation={true}
-            pagination={{
-                clickable: true,
-            }}
-            modules={[Navigation]}
-            className={`w-full h-full transition-all ${!explicit ? "blur-xl saturate-50 pointer-events-none" : ""} gallery`}
-        >
-            {gallery.map((element, index) =>
-                <SwiperSlide key={index}>
-                    <SingleSlide slide={element}/>
-                </SwiperSlide>
-            )}
-        </Swiper>
+        <div className={`flex flex-col items-center justify-center gap-20 w-full transition-all ${!explicit ? "blur-xl saturate-50 pointer-events-none" : ""}`}>
+            {
+                galleryVisible.map((element, index) =>
+                    <React.Fragment key={index}>
+                        <SingleSlide slide={element}/>
+                        {
+                            index !== galleryVisible.length - 1 ?
+                                <span className="w-3/4 pt-[1px] border-t-[1px] border-dashed border-neutral-500"/>
+                            :
+
+                            counter < gallery.length &&
+                                <button onClick={onLoadMore} className="hover:bg-purple transition border-black border-[1px] p-4 w-2/3 sm:w-1/3 bg-gold text-white text-lg rounded-lg shadow-lg">
+                                    Load More
+                                </button>
+                        }
+                    </React.Fragment>
+                )
+            }
+
+        </div>
     );
 };
 
