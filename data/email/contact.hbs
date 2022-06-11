@@ -1,73 +1,196 @@
-<html lang="en">
-    <head>
-        <title>Email Template</title>
-        <style>
-            .header{
-                padding: 2em 0;
-                margin: 0 1em;
-                border-bottom: 1pt solid grey;
-            }
-            .title{
-                font-size: 1.5em;
-            }
-            .paragraph{
-                line-height: 1.5em;
-            }
-            .span{
-                padding: 1em 0;
-                display: block;
-            }
-            .span-container{
-                padding: 1em;
-                color: #000000;
-                background-color: #cccccc;
-                border: 2pt solid black;
-            }
-            .main{
-                padding: 1em;
-                font-size: 1.25em;
-            }
-            .separator{
-                border: none;
-                border-top: 1px solid grey;
-                min-width: 100%;
-                margin: 2em 0;
-            }
-            .footer {
-                background-color: black;
-                color: white;
-                margin: 0 1em;
-                padding: 2em;
-            }
-
-        </style>
-    </head>
-    <body style="margin: 0">
-        <div class="header">
-            <div style="width: max-content; margin: auto; overflow: auto; clear: both">
-                <img src="cid:logo" alt="This is the logo">
-            </div>
-        </div>
-        <div class="main">
-            <h1 class="title">Thank you for contacting us</h1>
-            <p class="paragraph">
-                Dear <span style="font-weight: bold">{{name}}</span> <span style="font-weight: bold">{{surname}}</span>, <br/>
-                This email has been sent to inform you that you request has been received.
-            </p>
-            <p class="paragraph">We aim to respond you within 48 hours. <br/> Below you can find the details of your request</p>
-            <hr class="separator"/>
-            <div class="span-container">
-                <span class="span">Name: <span>{{name}}</span></span>
-                <span class="span">Surname: <span>{{surname}}</span></span>
-                <span class="span">Email: <span>{{email}}</span></span>
-                <span class="span">Phone: <span>{{phone}}</span></span>
-                <span class="span">Message: <span>{{message}}</span></span>
-            </div>
-        </div>
-        <div class="footer">
-            <span style="line-height: 1.5em;display: block; text-align: center">This is a NO-REPLY email. Any message sent to this email will be automatically discarded</span>
-            <span style="line-height: 1.5em;display: block; padding-top: 0.5em; text-align: center">If you haven't made any request please contact this email: <a href="mailto: domain.com">mail@domain.com</a></span>
-            <span style="padding-top: 1.5em; font-style: italic;  text-align: center; font-size: 0.75em; display: block"><a href="https://oshot.uk">Oshot.uk</a> | Every Right Reserved &reg;</span>
-        </div>
-    </body>
+<!DOCTYPE html>
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+  <meta charset="utf-8">
+  <meta name="x-apple-disable-message-reformatting">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+  <meta name="color-scheme" content="light dark">
+  <meta name="supported-color-schemes" content="light dark">
+  <!--[if mso]>
+  <noscript>
+    <xml>
+      <o:OfficeDocumentSettings xmlns:o="urn:schemas-microsoft-com:office:office">
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+  </noscript>
+  <style>
+    td,th,div,p,a,h1,h2,h3,h4,h5,h6 {font-family: "Segoe UI", sans-serif; mso-line-height-rule: exactly;}
+  </style>
+  <![endif]-->    <title>Request Received - Dr SW Clinic</title>    <style>
+@media (max-width: 600px) {
+    .sm-inline-block {
+        display: inline-block !important;
+    }
+    .sm-h-8 {
+        height: 32px !important;
+    }
+    .sm-w-full {
+        width: 100% !important;
+    }
+    .sm-px-4 {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+    .sm-py-8 {
+        padding-top: 32px !important;
+        padding-bottom: 32px !important;
+    }
+    .sm-px-6 {
+        padding-left: 24px !important;
+        padding-right: 24px !important;
+    }
+    .sm-px-0 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .sm-text-center {
+        text-align: center !important;
+    }
+}
+</style></head>
+<body style="word-break: break-word; -webkit-font-smoothing: antialiased; margin: 0; width: 100%; background-color: #f8fafc; padding: 0">    <div style="display: none">
+      Your Request has been received
+      &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847;
+    </div>
+  <div role="article" aria-roledescription="email" aria-label="Request Received - Dr SW Clinic" lang="en">    <table style="width: 100%; font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif" cellpadding="0" cellspacing="0" role="presentation">
+      <tr>
+        <td align="center" class="sm-px-4" style="background-color: #f8fafc">
+          <table class="sm-w-full" style="width: 600px" cellpadding="0" cellspacing="0" role="presentation">
+            <tr>
+              <td class="sm-py-8 sm-px-6" style="padding: 48px; text-align: center">
+                <a href="https://oshot.uk">
+                  <img src="cid:logo" width="200" alt="Dr SW Clinic Logo" style="border: 0; max-width: 100%; vertical-align: middle">
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="sm-px-0" style="width: 100%; padding-left: 24px; padding-right: 24px; text-align: left">
+                <table style="width: 100%" cellpadding="0" cellspacing="0" role="presentation">
+                  <tr>
+                    <td class="sm-w-full sm-inline-block" style="width: 100%; padding-bottom: 32px">
+                      <table style="width: 100%" cellpadding="0" cellspacing="0" role="presentation">
+                        <tr>
+                          <td style="border-radius: 4px; background-color: #fff; padding: 32px; font-size: 18px; box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05)">
+                            <h2 style="margin: 0; margin-bottom: 48px; font-size: 24px; line-height: 24px; color: rgb(162, 123, 46)">
+                                {{header}}</h2>
+                            <p>Dear <span style="font-weight: 700">{{fullname}}</span>,</p>
+                            <p style="font-size: 16px; line-height: 32px">
+                                {{text1}}<br>
+                                {{text2}}
+                            </p>
+                            <span style="margin-top: 32px; display: block; font-size: 16px; font-style: italic; color: #64748b">{{text3}}</span>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="sm-h-8" style="height: 32px"></td>
+            </tr>
+            <tr>
+              <td class="sm-px-6" style="padding-left: 48px; padding-right: 48px; text-align: left">
+                <h3 style="margin-top: 16px; margin-bottom: 16px; font-size: 20px; font-weight: 600; text-transform: uppercase">Your Request Details</h3>
+                <div style="line-height: 24px">&zwnj;</div>
+                <table style="width: 100%" cellpadding="0" cellspacing="0" role="presentation">
+                  <tr>
+                    <td>
+                      <h4 style="margin: 0; margin-bottom: 16px; font-size: 20px; font-weight: 600; color: #64748b">
+                          Name & Surname
+                      </h4>
+                      <p style="margin: 0; font-size: 18px">
+                          {{fullname}}
+                      </p>
+                      <table style="width: 100%" cellpadding="0" cellspacing="0" role="presentation">
+                        <tr>
+                          <td style="padding-top: 24px; padding-bottom: 24px">
+                            <div style="height: 1px; background-color: #cbd5e1; line-height: 1px">&zwnj;</div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h4 style="margin: 0; margin-bottom: 16px; font-size: 20px; font-weight: 600; color: #64748b">
+                        Email
+                      </h4>
+                      <p style="margin: 0; font-size: 18px">
+                          {{email}}
+                      </p>
+                      <table style="width: 100%" cellpadding="0" cellspacing="0" role="presentation">
+                        <tr>
+                          <td style="padding-top: 24px; padding-bottom: 24px">
+                            <div style="height: 1px; background-color: #cbd5e1; line-height: 1px">&zwnj;</div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h4 style="margin: 0; margin-bottom: 16px; font-size: 20px; font-weight: 600; color: #64748b">
+                        Phone
+                      </h4>
+                      <p style="margin: 0; font-size: 18px">
+                          {{phone}}
+                      </p>
+                      <table style="width: 100%" cellpadding="0" cellspacing="0" role="presentation">
+                        <tr>
+                          <td style="padding-top: 24px; padding-bottom: 24px">
+                            <div style="height: 1px; background-color: #cbd5e1; line-height: 1px">&zwnj;</div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h4 style="margin: 0; margin-bottom: 16px; font-size: 20px; font-weight: 600; color: #64748b">
+                        Message
+                      </h4>
+                      <p style="margin: 0; font-size: 18px">
+                        {{message}}
+                      </p>
+                      <table style="width: 100%" cellpadding="0" cellspacing="0" role="presentation">
+                        <tr>
+                          <td style="padding-top: 24px; padding-bottom: 24px">
+                            <div style="height: 1px; background-color: #cbd5e1; line-height: 1px">&zwnj;</div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="sm-h-8" style="height: 32px"></td>
+            </tr>
+            <tr>
+              <td class="sm-px-0 sm-text-center" style="width: 100%; padding-left: 32px; padding-right: 32px; padding-top: 32px; padding-bottom: 32px; text-align: left; box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05)">
+                <div style="border-radius: 4px; background-color: #fff; padding: 24px">
+                  <p style="margin: 0; font-size: 14px; line-height: 24px; color: #64748b">
+                    This is a <span style="font-weight: 700">No-Reply Email</span>. Please do not reply to this email because any incoming
+                    email will be automatically deleted.
+                  </p>
+                  <p style="font-size: 14px; line-height: 24px; color: #64748b">If you haven't contacted us please send an email to
+                    <a href="mailto: info@drswclinics.com" style="font-weight: 700; color: #64748b">info@drswclinics.com</a>
+                  </p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="sm-h-8" style="height: 48px"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>  </div>
+</body>
 </html>
