@@ -73,7 +73,7 @@ export const getStaticProps = () => {
     return {
         props: {
             press: pressFinal
-        }, revalidate: 600
+        }, revalidate: 3600
     }
 }
 

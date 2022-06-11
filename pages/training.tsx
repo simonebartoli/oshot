@@ -49,7 +49,7 @@ export const getStaticProps = () => {
         props: {
             videos,
             citations
-        }, revalidate: 3600*24
+        }, revalidate: 3600
     }
 }
 

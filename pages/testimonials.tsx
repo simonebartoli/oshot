@@ -54,7 +54,7 @@ export const getStaticProps = () => {
     return {
         props: {
             testimonials
-        }, revalidate: 600
+        }, revalidate: 3600
     }
 }
 

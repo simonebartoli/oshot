@@ -53,7 +53,7 @@ export const getStaticProps = () => {
     return {
         props: {
             testimonials
-        }
+        }, revalidate: 3600
     }
 }
 

@@ -106,7 +106,7 @@ export const getStaticProps = (context: any) => {
             article: article,
             articleData: articleData
         },
-        revalidate: 600
+        revalidate: 3600
     }
 
 }

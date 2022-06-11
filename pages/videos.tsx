@@ -48,7 +48,7 @@ export const getStaticProps = () => {
     return {
         props: {
             videos
-        }, revalidate: 600
+        }, revalidate: 3600
     }
 }
 
