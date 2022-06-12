@@ -14,6 +14,54 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+@media (min-width: 1750px) {
+  html, body{
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1920px) {
+  html, body{
+    font-size: 22px;
+  }
+}
+@media (min-width: 2500px) {
+  html, body{
+    font-size: 28px;
+  }
+}
+@media (min-width: 3000px) {
+  html, body{
+    font-size: 30px;
+  }
+}
+@media (min-width: 3500px) {
+  html, body{
+    font-size: 34px;
+  }
+}
+@media (min-width: 4000px) {
+  html, body{
+    font-size: 40px;
+  }
+}
+@media (min-width: 4500px) {
+  html, body{
+    font-size: 46px;
+  }
+}
+@media (min-width: 5000px) {
+  html, body{
+    font-size: 50px;
+  }
+}
+@media (min-width: 5500px) {
+  html, body{
+    font-size: 54px;
+  }
+}
+
+
 a {
   color: inherit;
   text-decoration: none;
