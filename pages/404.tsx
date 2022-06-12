@@ -1,6 +1,7 @@
 import React, {useEffect, useRef} from 'react';
 import Link from "next/link";
 import {useLayoutContext} from "../contexts/layout-context";
+import Head from "next/head";
 
 
 const Custom404 = () => {
@@ -14,6 +15,10 @@ const Custom404 = () => {
 
     return (
         <main ref={mainRef} id={"main"} className="transition-all p-8 text-center my-auto flex flex-col justify-center items-center gap-8">
+            <Head>
+                <title>Page Not Found - Oshot UK</title>
+                <meta name="robots" content="noindex, follow"/>
+            </Head>
             <h1 className="text-6xl text-red-700">404</h1>
             <span className="text-xl">
                 We are sorry, but the page you&apos;re looking for

@@ -33,17 +33,18 @@ const PressArticle: NextPage<Props> = ({articleData, article}) => {
                 <meta name="language" content="English"/>
                 <meta name="author" content="Sherif Wakil"/>
 
-                <meta property="og:title" content={`Press - ${article.title}`}/>
-                <meta property="og:site_name" content="Oshot UK"/>
+                <meta property="og:title" content={`Press - ${article.title} - Oshot UK`}/>
+                <meta property="og:site_name" content="Oshot UK - Improve Vaginal Stimulation"/>
                 <meta property="og:url" content="oshot.uk/press"/>
                 <meta property="og:description" content={`In this page you will find information about "${article.title}".`}/>
                 <meta property="og:type" content="article"/>
+                <meta property="og:image" content={`https://oshot.uk/${article.path}`}/>
 
                 <meta name="twitter:card" content="summary"/>
                 <meta name="twitter:site" content="@DrSWclinics"/>
                 <meta name="twitter:title" content={`${article.title} - Oshot UK`}/>
                 <meta name="twitter:description" content={`In this page you will find information about ${article.title}`}/>
-                {/*<meta name="twitter:image" content={article.path}/>*/}
+                <meta name="twitter:image" content={`https://oshot.uk/${article.path}`}/>
             </Head>
             <section className="flex md:flex-row flex-col justify-evenly items-start md:gap-14 gap-6">
                 <article className={"order-2 md:order-1 basis-2/3 sm:p-4 py-4"} dir={"auto"}>

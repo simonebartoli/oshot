@@ -6,11 +6,10 @@ import Head from "next/head";
 import {aboutJSONLD} from "../data/jsonld/about-jsonld";
 
 import "swiper/css/bundle";
-import Slider from "../components/about/slider";
 
 const About = () => {
     return (
-        <main id={"main"} className="flex flex-col items-center justify-center gap-14 p-8 pb-16">
+        <main id={"main"} className="flex flex-col items-center justify-center gap-16 p-8 pb-16">
             <Head>
                 <title>About Dr. Sherif Wakil - Oshot UK</title>
                 <meta name="description" content="Who is Dr. Sherif Wakil? Dr Sherif Wakil is the founder and medical director of DrSW Clinics and Royale Skin with more than two decades of experience "/>
@@ -25,7 +24,13 @@ const About = () => {
                 <meta property="og:url" content="oshot.uk/about"/>
                 <meta property="og:description" content="Who is Dr. Sherif Wakil? Dr Sherif Wakil is the founder and medical director of DrSW Clinics and Royale Skin with more than two decades of experience."/>
                 <meta property="og:type" content="books.author"/>
-                <meta property="og:image" content="https://oshot.uk/wp-content/uploads/2015/02/compli-drswclinics-about.jpg"/>
+                <meta property="og:image" content="https://oshot.uk/media/photos/about.png"/>
+
+                <meta name="twitter:card" content="summary"/>
+                <meta name="twitter:site" content="@DrSWclinics"/>
+                <meta name="twitter:title" content={"About Dr. Sherif Wakil - Oshot UK"}/>
+                <meta name="twitter:description" content={"Who is Dr. Sherif Wakil? Dr Sherif Wakil is the founder and medical director of DrSW Clinics and Royale Skin with more than two decades of experience."}/>
+                <meta name="twitter:image" content="https://oshot.uk/media/photos/about.png"/>
 
                 <script key={"about-JSONLD"} type={"application/ld+json"}
                         dangerouslySetInnerHTML={{
@@ -34,7 +39,7 @@ const About = () => {
                 />
             </Head>
             <h1 className="text-4xl">Dr. Sherif Wakil, MBBCh BA FICS</h1>
-            <Slider/>
+            {/*<Slider/>*/}
             <article className="flex sm:flex-row flex-col sm:gap-8 gap-12">
                 <figure className="flex justify-center items-center basis-1/3">
                     <div className={styles.about}>

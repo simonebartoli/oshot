@@ -17,16 +17,17 @@ const Contact = () => {
                 <meta name="author" content="Sherif Wakil"/>
 
                 <meta property="og:title" content={"Contact Us - Oshot UK"}/>
-                <meta property="og:site_name" content="Oshot UK"/>
+                <meta property="og:site_name" content="Oshot UK - Improve Vaginal Stimulation"/>
                 <meta property="og:url" content="oshot.uk/contact"/>
                 <meta property="og:description" content={"In this page you will find all the way in which you can contact us. Phone, email, contact form..."}/>
                 <meta property="og:type" content="website"/>
+                <meta property="og:image" content="https://oshot.uk/media/photos/logo.png"/>
 
                 <meta name="twitter:card" content="summary"/>
                 <meta name="twitter:site" content="@DrSWclinics"/>
                 <meta name="twitter:title" content={"Contact Us - Oshot UK"}/>
                 <meta name="twitter:description" content={"In this page you will find all the way in which you can contact us. Phone, email, contact form..."}/>
-                {/*<meta name="twitter:image" content={article.path}/>*/}
+                <meta name="twitter:image" content="https://oshot.uk/media/photos/logo.png"/>
             </Head>
 
             <h1 className="text-4xl">Contact Us</h1>

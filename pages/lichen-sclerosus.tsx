@@ -14,7 +14,7 @@ const Lichen = () => {
         <article className="flex flex-col sm:gap-6 gap-10 relative items-center justify-center py-16">
             <Head>
                 <title>Lichen Sclerosus - Oshot UK</title>
-                <meta name="description" content={"In this page you will find information about different medical conditions that could be improved/resolved with the Oshot therapy"}/>
+                <meta name="description" content={"In this page you will find information about lichen sclerosus that could be improved/resolved with the Oshot therapy"}/>
                 <meta name="keywords" content="disease, pain, sexual, dysfunction, incontinence, lichen, sclerosus, oshot, solution, feeling"/>
                 <meta name="robots" content="index, follow"/>
                 <meta httpEquiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -22,10 +22,17 @@ const Lichen = () => {
                 <meta name="author" content="Sherif Wakil"/>
 
                 <meta property="og:title" content={"Lichen Sclerosus - Oshot UK"}/>
-                <meta property="og:site_name" content="Oshot UK"/>
+                <meta property="og:site_name" content="Oshot UK - Improve Vaginal Stimulation"/>
                 <meta property="og:url" content="oshot.uk/lichen-sclerosus"/>
-                <meta property="og:description" content={"In this page you will find information about different medical conditions that could be improved/resolved with the Oshot therapy"}/>
+                <meta property="og:description" content={"In this page you will find information about lichen sclerosus that could be improved/resolved with the Oshot therapy"}/>
                 <meta property="og:type" content="article"/>
+                <meta property="og:image" content="https://oshot.uk/media/photos/logo.png"/>
+
+                <meta name="twitter:card" content="summary"/>
+                <meta name="twitter:site" content="@DrSWclinics"/>
+                <meta name="twitter:title" content={"Lichen Sclerosus - Oshot UK"}/>
+                <meta name="twitter:description" content={"In this page you will find information about lichen sclerosus that could be improved/resolved with the Oshot therapy"}/>
+                <meta name="twitter:image" content="https://oshot.uk/media/photos/logo.png"/>
             </Head>
             <h2 className={`px-8 text-4xl transition sm:text-left text-center font-semibold text-gold`}>Lichen Sclerosus</h2>
             <div className={`text-justify flex md:flex-row flex-col md:gap-20 gap-12 justify-center items-center sm:p-16 smx:p-10 p-8 smx:py-16 py-4 rounded-lg transition text-lg leading-10`}>

@@ -30,6 +30,19 @@ const Home: NextPage<Props> = ({testimonials}) => {
                 <meta httpEquiv="Content-Type" content="text/html; charset=utf-8"/>
                 <meta name="language" content="English"/>
                 <meta name="author" content="Sherif Wakil"/>
+
+                <meta property="og:title" content="Oshot UK - Improve Vaginal Stimulation"/>
+                <meta property="og:site_name" content="Oshot UK - Improve Vaginal Stimulation"/>
+                <meta property="og:url" content="oshot.uk"/>
+                <meta property="og:description" content="The O-Shot (or Orgasm Shot) is a new procedure developed to solve your sexual problems, increase your pleasure, and rejuvenate your vagina."/>
+                <meta property="og:type" content="article"/>
+                <meta property="og:image" content="https://oshot.uk/media/photos/logo.png"/>
+
+                <meta name="twitter:card" content="summary"/>
+                <meta name="twitter:site" content="@DrSWclinics"/>
+                <meta name="twitter:title" content={"Oshot UK - Improve Vaginal Stimulation"}/>
+                <meta name="twitter:description" content={"The O-Shot (or Orgasm Shot) is a new procedure developed to solve your sexual problems, increase your pleasure, and rejuvenate your vagina."}/>
+                <meta name="twitter:image" content="https://oshot.uk/media/photos/logo.png"/>
             </Head>
             <Homepage/>
             <WhyYouNeedIt/>

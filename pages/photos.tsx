@@ -34,18 +34,19 @@ const Photos: NextPage<Props> = ({gallery}) => {
                 <meta name="revisit-after" content="3 days"/>
                 <meta name="author" content="Sherif Wakil"/>
 
-                <meta property="og:title" content="Faq"/>
-                <meta property="og:site_name" content="Oshot UK"/>
-                <meta property="og:url" content="oshot.uk/faqs"/>
+                <meta property="og:title" content="Gallery - Oshot UK"/>
+                <meta property="og:site_name" content="Oshot UK - Improve Vaginal Stimulation"/>
+                <meta property="og:url" content="oshot.uk/photos"/>
                 <meta property="og:description"
                       content="In this page you'll be able to see what are the results of our operations over many different cases."/>
                 <meta property="og:type" content="article"/>
+                <meta property="og:image" content="https://oshot.uk/media/photos/logo.png"/>
 
                 <meta name="twitter:card" content="summary"/>
                 <meta name="twitter:site" content="@DrSWclinics"/>
-                <meta name="twitter:title" content={"Contact Us - Oshot UK"}/>
+                <meta name="twitter:title" content={"Gallery - Oshot UK"}/>
                 <meta name="twitter:description" content={"In this page you'll be able to see what are the results of our operations over many different cases."}/>
-                {/*<meta name="twitter:image" content={article.path}/>*/}
+                <meta name="twitter:image" content="https://oshot.uk/media/photos/logo.png"/>
             </Head>
             <h1 className="text-4xl">Gallery</h1>
             <p className="text-lg w-3/4 text-center leading-10">

@@ -4,6 +4,7 @@ import Head from "next/head";
 import {VideosType} from "../data/types";
 import getVideos from "./api/videos";
 import {NextPage} from "next";
+import {videosJSONLD} from "../data/jsonld/videos-jsonld";
 
 type Props = {
     videos: VideosType[]
@@ -23,10 +24,23 @@ const Videos: NextPage<Props> = ({videos}) => {
                 <meta name="author" content="Sherif Wakil"/>
 
                 <meta property="og:title" content="Videos - Oshot UK"/>
-                <meta property="og:site_name" content="Oshot UK"/>
+                <meta property="og:site_name" content="Oshot UK - Improve Vaginal Stimulation"/>
                 <meta property="og:url" content="oshot.uk/videos"/>
                 <meta property="og:description" content="In this page you can find videos explaining what is the Oshot Treatment and how has changed life of many women."/>
                 <meta property="og:type" content="video.episode"/>
+                <meta property="og:image" content="https://oshot.uk/media/photos/logo.png"/>
+
+                <meta name="twitter:card" content="summary"/>
+                <meta name="twitter:site" content="@DrSWclinics"/>
+                <meta name="twitter:title" content={"Videos - Oshot UK"}/>
+                <meta name="twitter:description" content={"In this page you can find videos explaining what is the Oshot Treatment and how has changed life of many women."}/>
+                <meta name="twitter:image" content="https://oshot.uk/media/photos/logo.png"/>
+
+                <script key={"about-JSONLD"} type={"application/ld+json"}
+                        dangerouslySetInnerHTML={{
+                            __html: JSON.stringify(videosJSONLD())
+                        }}
+                />
             </Head>
             <h1 className="text-4xl">Videos</h1>
             <section className="flex flex-col gap-12 p-4">

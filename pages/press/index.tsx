@@ -24,10 +24,17 @@ const Index: NextPage<Props> = (props) => {
                 <meta name="author" content="Sherif Wakil"/>
 
                 <meta property="og:title" content="Press"/>
-                <meta property="og:site_name" content="Oshot UK"/>
+                <meta property="og:site_name" content="Oshot UK - Improve Vaginal Stimulation"/>
                 <meta property="og:url" content="oshot.uk/press"/>
                 <meta property="og:description" content="In this page you can find all the article and papers where Oshot UK (by Dr SW Clinic) has been mentioned."/>
                 <meta property="og:type" content="article"/>
+                <meta property="og:image" content="https://oshot.uk/media/photos/logo.png"/>
+
+                <meta name="twitter:card" content="summary"/>
+                <meta name="twitter:site" content="@DrSWclinics"/>
+                <meta name="twitter:title" content={"Press - Oshot UK"}/>
+                <meta name="twitter:description" content={"In this page you can find all the article and papers where Oshot UK (by Dr SW Clinic) has been mentioned."}/>
+                <meta name="twitter:image" content="https://oshot.uk/media/photos/logo.png"/>
             </Head>
             <h1 className="text-4xl">Press</h1>
             <section id={"press"} className="w-full flex flex-row items-start justify-start relative mt-8">

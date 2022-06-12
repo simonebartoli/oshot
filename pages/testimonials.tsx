@@ -24,11 +24,17 @@ const Testimonials: NextPage<Props> = ({testimonials}) => {
                 <meta name="author" content="Sherif Wakil"/>
 
                 <meta property="og:title" content="Testimonials and Experiences - Oshot UK"/>
-                <meta property="og:site_name" content="Oshot UK"/>
+                <meta property="og:site_name" content="Oshot UK - Improve Vaginal Stimulation"/>
                 <meta property="og:url" content="oshot.uk/testimonials"/>
                 <meta property="og:description" content="Here you can find all the experiences and story of our past patients. They all were very impressed on how this treatment change their lives."/>
-                <meta property="og:type" content="website"/>
-                <meta property="og:image" content=""/>
+                <meta property="og:type" content="article"/>
+                <meta property="og:image" content="https://oshot.uk/media/photos/logo.png"/>
+
+                <meta name="twitter:card" content="summary"/>
+                <meta name="twitter:site" content="@DrSWclinics"/>
+                <meta name="twitter:title" content={"Testimonials and Experiences - Oshot UK"}/>
+                <meta name="twitter:description" content={"Here you can find all the experiences and story of our past patients. They all were very impressed on how this treatment change their lives."}/>
+                <meta name="twitter:image" content="https://oshot.uk/media/photos/logo.png"/>
 
             </Head>
             <h1 className="text-4xl">Testimonials</h1>

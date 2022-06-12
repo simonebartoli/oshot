@@ -16,16 +16,18 @@ const FemaleOrgasmSystem = () => {
                 <meta name="author" content="Sherif Wakil"/>
 
                 <meta property="og:title" content={"Female Orgasm System - Oshot UK"}/>
-                <meta property="og:site_name" content="Oshot UK"/>
+                <meta property="og:site_name" content="Oshot UK - Improve Vaginal Stimulation"/>
                 <meta property="og:url" content="oshot.uk/female-orgasm-system"/>
                 <meta property="og:description" content={"In this page you will find why could you need a therapy and what problems Oshot could solve over time"}/>
                 <meta property="og:type" content="article"/>
+                <meta property="og:image" content="https://oshot.uk/media/photos/logo.png"/>
 
                 <meta name="twitter:card" content="summary"/>
                 <meta name="twitter:site" content="@DrSWclinics"/>
-                <meta name="twitter:title" content={"Conditions - Oshot UK"}/>
+                <meta name="twitter:title" content={"Female Orgasm System - Oshot UK"}/>
                 <meta name="twitter:description" content={"In this page you will find why could you need a therapy and what problems Oshot could solve over time"}/>
-                {/*<meta name="twitter:image" content={article.path}/>*/}
+                <meta name="twitter:image" content="https://oshot.uk/media/photos/logo.png"/>
+
                 <script key={"female-JSONLD"} type={"application/ld+json"}
                         dangerouslySetInnerHTML={{
                             __html: JSON.stringify(femaleOrgasmSystemJSONLD())

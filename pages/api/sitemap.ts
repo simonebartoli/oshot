@@ -8,38 +8,71 @@ export const handler = async (req: NextApiRequest, res: NextApiResponse<any>) =>
         });
 
         // List of links
-
-        const links = [
+        type LinkType = {
+            name: string
+            priority: number
+            changefreq?: string
+        }
+        const links: LinkType[] = [
             {
-                name: "/"
+                name: "/",
+                priority: 1.0
             },
             {
-                name: "/about"
+                name: "/about",
+                priority: 0.7
             },
             {
-                name: "/testimonials"
+                name: "/testimonials",
+                priority: 0.8
             },
             {
-                name: "/conditions"
+                name: "/awards",
+                priority: 0.7
             },
             {
-                name: "/female-orgasm-system"
+                name: "/sexual-dysfunction",
+                priority: 0.7
+            },
+            {
+                name: "/incontinence",
+                priority: 0.7
+            },
+            {
+                name: "/lichen-sclerosus",
+                priority: 0.7
+            },
+            {
+                name: "/female-orgasm-system",
+                priority: 0.7
             },
             {
                 name: "/videos",
-                changefreq: "daily"
+                changefreq: "daily",
+                priority: 0.8
             },
             {
                 name: "/press",
-                changefreq: "daily"
+                changefreq: "daily",
+                priority: 0.3
             },
             {
-                name: "/contact"
+                name: "/training",
+                priority: 0.7
+            },
+            {
+                name: "/contact",
+                priority: 0.7
             }
         ];
         const numOfPress = 2
-        const press = []
-        for(let i=0; i<numOfPress; i++) press.push({name: `/press/${i+1}`})
+        const press: LinkType[] = []
+        for(let i=0; i<numOfPress; i++) {
+            press.push({
+                name: `/press/${i + 1}`,
+                priority: 0.3
+            })
+        }
         const linksSitemap = [
             ...links,
             ...press
@@ -50,7 +83,7 @@ export const handler = async (req: NextApiRequest, res: NextApiResponse<any>) =>
             smStream.write({
                 url: link.name,
                 changefreq: link.changefreq !== undefined ? link.changefreq: "monthly",
-                priority: 0.9
+                priority: link.priority
             });
         });
 

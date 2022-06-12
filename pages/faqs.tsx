@@ -25,12 +25,17 @@ const Faqs: NextPage<Props> = ({faqs}) => {
                 <meta name="revisit-after" content="3 days"/>
                 <meta name="author" content="Sherif Wakil"/>
 
-                <meta property="og:title" content="Faq"/>
-                <meta property="og:site_name" content="Oshot UK"/>
+                <meta property="og:title" content="Faqs - Oshot UK"/>
+                <meta property="og:site_name" content="Oshot UK - Improve Vaginal Stimulation"/>
                 <meta property="og:url" content="oshot.uk/faqs"/>
-                <meta property="og:description"
-                      content="In this page you'll find all the answers for the most common questions we have collected over time."/>
+                <meta property="og:description" content="In this page you'll find all the answers for the most common questions we have collected over time."/>
                 <meta property="og:type" content="article"/>
+
+                <meta name="twitter:card" content="summary"/>
+                <meta name="twitter:site" content="@DrSWclinics"/>
+                <meta name="twitter:title" content={"Faqs - Oshot UK"}/>
+                <meta name="twitter:description" content={"In this page you'll find all the answers for the most common questions we have collected over time."}/>
+                <meta name="twitter:image" content="https://oshot.uk/media/photos/logo.png"/>
 
                 <script key={"faqs-JSONLD"} type={"application/ld+json"}
                         dangerouslySetInnerHTML={{

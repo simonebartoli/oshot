@@ -15,16 +15,17 @@ const Privacy = () => {
                 <meta name="author" content="Sherif Wakil"/>
 
                 <meta property="og:title" content={"Privacy - Oshot UK"}/>
-                <meta property="og:site_name" content="Oshot UK"/>
+                <meta property="og:site_name" content="Oshot UK - Improve Vaginal Stimulation"/>
                 <meta property="og:url" content="oshot.uk/privacy"/>
                 <meta property="og:description" content={"In this page you will find the terms and conditions of our service."}/>
                 <meta property="og:type" content="website"/>
+                <meta property="og:image" content="https://oshot.uk/media/photos/logo.png"/>
 
                 <meta name="twitter:card" content="summary"/>
                 <meta name="twitter:site" content="@DrSWclinics"/>
-                <meta name="twitter:title" content={"Contact Us - Oshot UK"}/>
+                <meta name="twitter:title" content={"Privacy - Oshot UK"}/>
                 <meta name="twitter:description" content={"In this page you will find the terms and conditions of our service."}/>
-                {/*<meta name="twitter:image" content={article.path}/>*/}
+                <meta name="twitter:image" content="https://oshot.uk/media/photos/logo.png"/>
             </Head>
             <h1 className="text-4xl">Privacy</h1>
             <article className="flex flex-col gap-8 sm:w-3/4 w-full px-4">

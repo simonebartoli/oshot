@@ -6,7 +6,7 @@ const Incontinence = () => {
         <article className="flex flex-col sm:gap-6 gap-10 relative justify-center items-center p-8 py-16">
             <Head>
                 <title>Incontinence - Oshot UK</title>
-                <meta name="description" content={"In this page you will find information about different medical conditions that could be improved/resolved with the Oshot therapy"}/>
+                <meta name="description" content={"In this page you will find information about incontinence that could be improved/resolved with the Oshot therapy"}/>
                 <meta name="keywords" content="disease, pain, sexual, dysfunction, incontinence, lichen, sclerosus, oshot, solution, feeling"/>
                 <meta name="robots" content="index, follow"/>
                 <meta httpEquiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -14,10 +14,17 @@ const Incontinence = () => {
                 <meta name="author" content="Sherif Wakil"/>
 
                 <meta property="og:title" content={"Incontinence - Oshot UK"}/>
-                <meta property="og:site_name" content="Oshot UK"/>
+                <meta property="og:site_name" content="Oshot UK - Improve Vaginal Stimulation"/>
                 <meta property="og:url" content="oshot.uk/incontinence"/>
-                <meta property="og:description" content={"In this page you will find information about different medical conditions that could be improved/resolved with the Oshot therapy"}/>
+                <meta property="og:description" content={"In this page you will find information about incontinence that could be improved/resolved with the Oshot therapy"}/>
                 <meta property="og:type" content="article"/>
+                <meta property="og:image" content="https://oshot.uk/media/photos/logo.png"/>
+
+                <meta name="twitter:card" content="summary"/>
+                <meta name="twitter:site" content="@DrSWclinics"/>
+                <meta name="twitter:title" content={"Incontinence - Oshot UK"}/>
+                <meta name="twitter:description" content={"In this page you will find information about incontinence that could be improved/resolved with the Oshot therapy"}/>
+                <meta name="twitter:image" content="https://oshot.uk/media/photos/logo.png"/>
             </Head>
             <span className="absolute -top-20" id={"incontinence"}/> {/*ANCHOR LINK*/}
             <h2 className={`text-4xl transition font-semibold text-gold sm:text-left text-center`}>Incontinence</h2>
