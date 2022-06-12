@@ -59,15 +59,15 @@ const IndexArticle: NextPage<Props> = ({id, title, brief, author, date, path, na
             <div className={styles.press}>
                 <Image src={path} layout="fill"  alt={`Image - ${title}`} className={styles.image}/>
             </div>
-            <div className="sm:w-1/2 w-full flex flex-col gap-4 justify-evenly self-stretch" dir="auto">
+            <div className="sm:w-1/2 w-full flex flex-col gap-4 justify-evenly self-stretch">
                 <div>
                     {
                         nation !== undefined && <span className="text-red-600 italic text-lg">International</span>
                     }
-                    <h2 className="text-2xl">{title}</h2>
+                    <h2 className="text-2xl" dir="auto">{title}</h2>
                     <span className="text-sm italic">{`${author} ${(widthPage !== null && widthPage < 768) ? " | " + date : ""}`}</span>
                 </div>
-                <p>
+                <p dir="auto">
                     {brief}
                 </p>
                 <div className="flex flex-row justify-end sm:justify-start items-center gap-8">
