@@ -8,6 +8,7 @@ import Link from "next/link";
 import {useResizer} from "../../contexts/resizer-context";
 import Image from "next/image";
 import DecoratorSVG from "../../public/media/photos/index/decorator.png"
+import Iframe from "../iframe";
 
 type Props = {
     testimonials: TestimonialsCombinedType[]
@@ -53,18 +54,13 @@ const Reviews: NextPage<Props> = ({testimonials}) => {
                     <Image src={DecoratorSVG} alt="decorator"/>
                 </div>
                 <div className="flex md:flex-row flex-col w-full items-center justify-evenly md:gap-0 gap-16">
-                    <iframe src="https://www.youtube.com/embed/9CJmkxKmLDE"
-                            title="YouTube video player"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                            className="rounded-lg basis-1/3 aspect-video outline-dashed outline-offset-8 outline-gold shadow-lg"
+                    <Iframe
+                        url="https://www.youtube.com/embed/9CJmkxKmLDE"
+                        className={"rounded-lg basis-1/3 outline-dashed outline-offset-8 outline-gold shadow-lg"}
                     />
-
-                    <iframe src="https://www.youtube.com/embed/su9Xku4IG9E"
-                            title="YouTube video player"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                            className="rounded-lg basis-1/3 aspect-video outline-dashed outline-offset-8 outline-gold shadow-lg"
+                    <Iframe
+                        url="https://www.youtube.com/embed/su9Xku4IG9E"
+                        className={"rounded-lg basis-1/3 outline-dashed outline-offset-8 outline-gold shadow-lg"}
                     />
                 </div>
             </div>

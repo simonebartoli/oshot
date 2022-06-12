@@ -1,5 +1,6 @@
 import React from 'react';
 import {NextPage} from "next";
+import Iframe from "../iframe";
 
 type Props = {
     title: string,
@@ -18,13 +19,11 @@ const VideosArticle: NextPage<Props> = ({title, description, url}) => {
                 </div>
             </div>
             <div className="flex flex-row justify-center w-full basis-1/3 grow">
-                <iframe src={url.replace("https://youtu.be/", "https://youtube.com/embed/")}
-                        title={`Youtube Video - ${title}`}
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                        className="lg:w-2/3 w-full shadow-xl aspect-video p-2 border-2 outline outline-1 outline-offset-4 outline-gold border-gold rounded-lg"
-                >
-                </iframe>
+                <Iframe
+                    url={url.replace("https://youtu.be/", "https://youtube.com/embed/")}
+                    className={"lg:w-2/3 w-full shadow-xl p-2 border-2 outline outline-1 outline-offset-4 outline-gold border-gold rounded-lg"}
+                    title={`Youtube Video - ${title}`}
+                />
             </div>
         </article>
     );

@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from "next/link";
+import Iframe from "../iframe";
 
 const WhatIsIt = () => {
     return (
@@ -15,11 +16,9 @@ const WhatIsIt = () => {
                     </p>
                 </div>
             </div>
-            <iframe src="https://www.youtube.com/embed/OXjuNLuoLXM"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    className="w-full sm:w-4/5 md:w-3/5 aspect-video rounded-lg outline-double outline-4 outline-white outline-offset-2 shadow-lg"
+            <Iframe
+                url={"https://www.youtube.com/embed/OXjuNLuoLXM"}
+                className={"w-full sm:w-4/5 md:w-3/5 rounded-lg outline-double outline-4 outline-white outline-offset-2 shadow-lg"}
             />
             <div className="flex flex-col gap-8 w-full sm:w-2/3 mdx:w-1/2 xls:w-2/5 leading-10 text-center">
                 <p className="text-xl">Are you interested and want to contact us? <br/>Please click the button below.</p>
