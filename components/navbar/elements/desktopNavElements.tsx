@@ -16,7 +16,7 @@ const DesktopNavElements: NextPage<Props> = ({navElement}) => {
                     <div>
                         {navElement.type === "standard" ?
                             <Link href={!navElement.interaction ? "" : navElement.interaction.link}>
-                                <a className="uppercase cursor-pointer py-6 hover:text-gold transition duration-300">{navElement.name}</a>
+                                <a ref={!navElement.interaction ? "" : navElement.interaction.link} className="uppercase cursor-pointer py-6 hover:text-gold transition duration-300">{navElement.name}</a>
                             </Link>
                             :
                         navElement.type === "separator" ?
@@ -26,7 +26,7 @@ const DesktopNavElements: NextPage<Props> = ({navElement}) => {
                                 <Link href={!navElement.interaction ? "" : navElement.interaction.link}>
                                     <div className="flex flex-row gap-2 items-center rounded-lg py-3 text-lg transition-all group">
                                         <BsTelephoneInbound className="text-gold group-hover:text-purple duration-300"/>
-                                        <a className="uppercase font-semibold cursor-pointer text-gold group-hover:text-purple duration-300">{navElement.name}</a>
+                                        <a href={!navElement.interaction ? "" : navElement.interaction.link} className="uppercase font-semibold cursor-pointer text-gold group-hover:text-purple duration-300">{navElement.name}</a>
                                     </div>
                                 </Link>
                             :

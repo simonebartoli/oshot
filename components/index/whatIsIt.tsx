@@ -23,7 +23,7 @@ const WhatIsIt = () => {
             <div className="flex flex-col gap-8 w-full sm:w-2/3 mdx:w-1/2 xls:w-2/5 leading-10 text-center">
                 <p className="text-xl">Are you interested and want to contact us? <br/>Please click the button below.</p>
                 <Link href={"/contact"}>
-                    <a className="hover:bg-white hover:text-black transition p-4 text-center text-2xl bg-purple shadow-md rounded-lg">Contact Us</a>
+                    <a href={"/contact"} className="hover:bg-white hover:text-black transition p-4 text-center text-2xl bg-purple shadow-md rounded-lg">Contact Us</a>
                 </Link>
             </div>
         </section>

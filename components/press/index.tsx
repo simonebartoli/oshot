@@ -75,7 +75,7 @@ const IndexArticle: NextPage<Props> = ({id, title, brief, author, date, path, na
                         <FaAngleDoubleRight className="mt-[8px] scale-125 text-neutral-500 transition"/>
                     </span>
                     <Link href={`/press/${id}`}>
-                        <a ref={readMoreRef} className="text-neutral-500 hover:scale-110 hover:text-gold transition text-xl underline underline-offset-8">Read More</a>
+                        <a href={`/press/${id}`} ref={readMoreRef} className="text-neutral-500 hover:scale-110 hover:text-gold transition text-xl underline underline-offset-8">Read More</a>
                     </Link>
                 </div>
             </div>

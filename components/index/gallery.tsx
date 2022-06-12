@@ -14,7 +14,7 @@ const Gallery = () => {
                 <span className="font-semibold text-gold text-center">+100 Photos</span>
             </div>
             <Link href={"/photos"}>
-                <a className="sm:w-1/2 w-full text-lg p-4 text-white bg-purple rounded-lg shadow-lg text-center hover:bg-gold transition">Look Our Gallery</a>
+                <a href={"/photos"} className="sm:w-1/2 w-full text-lg p-4 text-white bg-purple rounded-lg shadow-lg text-center hover:bg-gold transition">Look Our Gallery</a>
             </Link>
         </section>
     );

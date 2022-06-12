@@ -1,4 +1,4 @@
-Sitemap: /api/sitemap
+Sitemap: https://oshot.uk/api/sitemap
 User-Agent: *
 Allow: /
 Disallow: /api/*

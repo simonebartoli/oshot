@@ -25,7 +25,7 @@ const Footer = () => {
                             <span>More Info on: <a rel={"noreferrer"} target="_blank" className="hover:text-gold transition duration-200" href="https://drswclinics.com">drswclinics.com</a></span>
                             <span> | </span>
                             <Link href={"/privacy"}>
-                                <a className="hover:text-gold transition duration-200">Privacy</a>
+                                <a href={"/privacy"} className="hover:text-gold transition duration-200">Privacy</a>
                             </Link>
                         </div>
                         <span>Treatment Provided By Dr SW Clinics | All Right Reserved &reg;</span>

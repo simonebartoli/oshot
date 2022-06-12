@@ -93,7 +93,7 @@ const Reviews: NextPage<Props> = ({testimonials}) => {
                                         </p>
                                     </div>
                                     <Link href={"/testimonials"}>
-                                        <a className="text-gold text-right text-base">Read More...</a>
+                                        <a href={"/testimonials"} className="text-gold text-right text-base">Read More...</a>
                                     </Link>
                                 </div>
                             </SwiperSlide>

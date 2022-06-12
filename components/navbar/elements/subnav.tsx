@@ -12,7 +12,7 @@ const SubNav: NextPage<Props> = ({subMenu}) => {
         <div className="group-hover:flex overflow-hidden origin-top group-hover:animate-marginDown hidden flex-col bg-gray-50 drop-shadow-lg border-l-4 border-l-gold top-16 absolute w-max h-fit">
             {subMenu.map((element, index) =>
                 <Link key={index} href={!element.interaction ? "" : element.interaction.link}>
-                    <a className="cursor-pointer capitalize py-2.5 pl-2 pr-8 hover:bg-gray-200">{element.name}</a>
+                    <a href={!element.interaction ? "" : element.interaction.link} className="cursor-pointer capitalize py-2.5 pl-2 pr-8 hover:bg-gray-200">{element.name}</a>
                 </Link>
             )}
         </div>

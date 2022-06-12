@@ -35,7 +35,7 @@ const MobileNavElements: NextPage<Props> = ({navElement, closeNav, closeNavFunct
                     {
                         navElement.type === "standard" ?
                             <Link href={!navElement.interaction ? "" : navElement.interaction.link}>
-                                <a className="inline-block transition duration-300 hover:bg-gray-300 hover:text-gold hover:font-semibold py-4 w-full uppercase cursor-pointer"
+                                <a href={!navElement.interaction ? "" : navElement.interaction.link} className="inline-block transition duration-300 hover:bg-gray-300 hover:text-gold hover:font-semibold py-4 w-full uppercase cursor-pointer"
                                    onClick={closeNavFunction}>{navElement.name}</a>
                             </Link>
                             :
@@ -46,7 +46,7 @@ const MobileNavElements: NextPage<Props> = ({navElement, closeNav, closeNavFunct
                             <Link href={!navElement.interaction ? "" : navElement.interaction.link}>
                                 <div className="flex flex-row gap-4 items-center justify-center py-6 w-full cursor-pointer transition duration-300 hover:bg-gray-300 group text-xl">
                                     <BsTelephoneInbound className="text-gold group-hover:text-purple duration-300"/>
-                                    <a className="transition-all duration-300 text-gold duration-300 group-hover:text-purple group-hover:font-semibold uppercase"
+                                    <a href={!navElement.interaction ? "" : navElement.interaction.link} className="transition-all duration-300 text-gold duration-300 group-hover:text-purple group-hover:font-semibold uppercase"
                                        >{navElement.name}</a>
                                 </div>
                             </Link>
