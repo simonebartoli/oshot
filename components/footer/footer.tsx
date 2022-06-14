@@ -49,7 +49,7 @@ const Footer = () => {
                             </div>
                         </div>
                         <div className="text-center basis-3/5">
-                            <span className="capitalize font-semibold italic text-xl leading-8">“Love of beauty is taste.<br/> The creation of beauty is art”</span>
+                            <span className="capitalize font-semibold italic text-xl leading-10">“O Concept™ for her:<br/> Its NOT abut your Sexual illness… <br/>its about your Sexual Wellness….”</span>
                         </div>
                     </div>
                 </div>

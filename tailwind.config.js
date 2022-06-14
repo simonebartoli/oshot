@@ -31,6 +31,7 @@ module.exports = {
       },
       colors: {
         'gold': "rgb(162, 123, 46)",
+        'gold-light': "rgb(189,147,62)",
         'silver': "rgb(192,192,192)",
         'purple': "rgba(134,49,148,1)"
       }

@@ -4,7 +4,7 @@ import {NextApiRequest, NextApiResponse} from "next";
 export const handler = async (req: NextApiRequest, res: NextApiResponse<any>) => {
     try {
         const smStream = new SitemapStream({
-            hostname: `https://${req.headers.host}`
+            hostname: `https://oshot.uk`
         });
 
         // List of links

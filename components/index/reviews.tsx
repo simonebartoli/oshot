@@ -59,9 +59,25 @@ const Reviews: NextPage<Props> = ({testimonials}) => {
                         className={"rounded-lg basis-1/3 outline-dashed outline-offset-8 outline-gold shadow-lg"}
                     />
                     <Iframe
-                        url="https://www.youtube.com/embed/su9Xku4IG9E"
+                        url="https://www.youtube.com/embed/V32C11_XktA"
                         className={"rounded-lg basis-1/3 outline-dashed outline-offset-8 outline-gold shadow-lg"}
                     />
+                </div>
+                <div className="flex md:flex-row flex-col w-full items-center justify-evenly md:gap-0 gap-16">
+                    <Iframe
+                        url="https://www.youtube.com/embed/YcwRGH9RHrw"
+                        className={"rounded-lg basis-1/3 outline-dashed outline-offset-8 outline-gold shadow-lg"}
+                    />
+                    <Iframe
+                        url="https://www.youtube.com/embed/f19JI50ePWc"
+                        className={"rounded-lg basis-1/3 outline-dashed outline-offset-8 outline-gold shadow-lg"}
+                    />
+                </div>
+                <div className="flex flex-col gap-8 px-8 w-full items-center justify-center">
+                    <p className="text-center text-xl">Do you want to see more video testimonials?</p>
+                    <Link href={"/videos"}>
+                        <a href={"/videos"} className="mdx:w-1/3 sm:w-1/2 smxl:w-3/4 w-5/6 text-lg p-4 text-white bg-purple rounded-lg shadow-lg text-center hover:bg-gold transition">Look Our Videos</a>
+                    </Link>
                 </div>
             </div>
             <div className={"w-full border-dotted border-silver border-y-2 pb-4 mt-6 px-0 bg-neutral-100"}>

@@ -33,7 +33,7 @@ const WhoAreWe = () => {
                             <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-black shadow-md border-[1px] p-8 bg-purple rounded-full z-0"/>
                             <RiCalendarTodoFill className="relative z-10 text-white"/>
                         </div>
-                        <span className="sm:text-2xl text-xl text-white">More than 17000 Operations</span>
+                        <span className="sm:text-2xl text-xl text-white">More than 25000 Procedures</span>
                     </div>
                     <div className="flex flex-row items-center justify-center gap-10">
                         <div className="relative">
@@ -47,21 +47,25 @@ const WhoAreWe = () => {
                             <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-black shadow-md border-[1px] p-8 bg-purple rounded-full z-0"/>
                             <RiNumber1 className="relative z-10 text-white"/>
                         </div>
-                        <span className="sm:text-2xl text-xl text-white">Only doctor in Europe to offer these treatments</span>
+                        <span className="sm:text-2xl text-xl text-white">
+                            The first doctor to introduce these treatments to Europe and the Middle East
+                        </span>
                     </div>
                     <div className="flex flex-row items-center justify-center gap-10">
                         <div className="relative">
                             <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-black shadow-md border-[1px] p-8 bg-purple rounded-full z-0"/>
                             <FaRegHospital className="relative z-10 text-white"/>
                         </div>
-                        <span className="sm:text-2xl text-xl text-white">Founder of the Royale Academy Of Aesthetic Medicine</span>
+                        <span className="sm:text-2xl text-xl text-white">
+                            President of the International Association and Sexual Wellbeing and Funder of Dr SW Clinics
+                        </span>
                     </div>
                     <div className="flex flex-row items-center justify-center gap-10">
                         <div className="relative">
                             <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-black shadow-md border-[1px] p-8 bg-purple rounded-full z-0"/>
                             <AiOutlineTrophy className="relative z-10 text-white"/>
                         </div>
-                        <span className="sm:text-2xl text-xl text-white">Award Winner for Several Years</span>
+                        <span className="sm:text-2xl text-xl text-white">Multiple Awards Winner Doctor</span>
                     </div>
                 </div>
             </div>
